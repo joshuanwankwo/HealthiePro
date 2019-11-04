@@ -1,0 +1,40 @@
+#home-footer-con{
+    background-color: #35444E;
+}
+.home-footer-text-con{
+    display:flex;
+    color:#fff;
+    padding:5%;
+}
+#home-footer-text{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.5px;
+    line-height: 154.4%;
+}
+.home-footer-text-con div{
+width:33.3%;
+padding-right:5%;
+}
+#home-footer-about{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 119.7%;
+}
+#home-recent-blog{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 119.7%;
+}
+#home-footer-contact{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 119.7%;
+}

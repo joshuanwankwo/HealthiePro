@@ -1,0 +1,14 @@
+#home-team-con {
+    height: 500px;
+    background-image: url("../../../assets/healthie-team.svg")
+}
+
+#home-team-con p {
+    text-align: center;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140.7%;
+    padding-top:5%;
+}

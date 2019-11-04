@@ -1,0 +1,48 @@
+#home-service-con{
+    background:linear-gradient(270deg, rgba(68, 199, 191, 0.1) 0%,#dcf1fe 100%);
+    background-size: cover;
+    width:100%;
+ 
+}
+#service-background-con{
+    position: absolute;
+}
+#home-service{
+    display:flex;
+    
+    padding-top:86px;
+
+}
+#home-test-doc{
+   height:498px;
+   width:394px;
+   margin-left:50px;
+}
+#home-service-con-text{
+    width:50%;
+}
+#home-service p{
+    display: inline;
+}
+#home-service-title{
+    color:#4290C9;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 154.4%;
+}
+#home-service-header{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 154.4%;
+}
+#home-service-text{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 154.4%;
+}

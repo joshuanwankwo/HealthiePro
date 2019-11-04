@@ -1,0 +1,17 @@
+#homeMain-con{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height:100%; */
+    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%, #4E9ED8 100%), url(../../../assets/homebackground.svg);
+
+} 
+#home-intro{
+    margin-top: 5%;
+    text-align:center;
+    color:white;
+    font-weight:bold; 
+    font-family:'Noto Serif', serif;
+    font-size:36px;
+    line-height:80.7%;
+}

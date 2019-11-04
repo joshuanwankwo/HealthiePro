@@ -1,0 +1,12 @@
+
+#home-nav-con ul {
+    float: right;
+}
+#home-nav-con li{
+    display:inline-block;
+    margin: 20px;
+    color:#fff;
+}
+#home-nav-con img {
+ margin:20px;
+}

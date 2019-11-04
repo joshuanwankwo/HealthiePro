@@ -1,0 +1,37 @@
+#about-con{
+    margin:5%;
+    margin-top:10%;
+
+}
+#about{
+    display:flex;
+    width:100%;
+    
+}
+#about-details{
+    width:50%;
+    margin:20px;
+    margin-left:50px;
+}
+#about-title{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 154.4%;
+    color:#4290C9;
+}
+#about-title-1{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 154.4%;
+}
+#about-text{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 154.4%;
+}

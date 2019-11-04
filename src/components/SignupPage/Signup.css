@@ -1,0 +1,42 @@
+*  {
+    margin: 0px;
+    padding: 0px;
+}
+
+.signup-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 533px;
+    background: #ffffff;
+    margin: 45px auto;
+}
+
+.signup-p{
+    width: 280px;
+    height: 37px;
+    font-family: 'Noto Serif', serif;
+    font-size: 24px;
+    text-align: center;
+    color: #4290C9;
+}
+
+.signup-FormGroup{
+    width: 205px;
+}
+
+.signUp-btn{
+    width: 80%;
+}
+
+.signup-checkBox{
+    color: #4290C9;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.signup-label{
+    color: #4290C9;
+    font-family: 'Noto Sans', sans-serif;
+}
