@@ -29,11 +29,12 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "airbrake-js": "^2.0.0-beta.3",
     "bootstrap": "^4.3.1",
     "file-loader": "^4.2.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-image": "^2.2.0",
-    "react-router-dom": "^5.0.1",
+    "react-router-dom": "^5.1.2",
     "react-svg": "^10.0.19",
     "url-loader": "^2.1.0"
   },
