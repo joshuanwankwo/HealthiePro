@@ -6,8 +6,7 @@ import HomePageNav from './HomePageNav/HomePageNav';
 class HomePageMain extends React.Component {
     constructor(props) {
         super(props);
-        this.state={
-        }
+        this.state={}
     }
 
     render() {

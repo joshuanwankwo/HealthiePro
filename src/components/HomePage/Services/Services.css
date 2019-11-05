@@ -2,7 +2,6 @@
     background:linear-gradient(270deg, rgba(68, 199, 191, 0.1) 0%,#dcf1fe 100%);
     background-size: cover;
     width:100%;
- 
 }
 #service-background-con{
     position: absolute;
@@ -20,6 +19,7 @@
 }
 #home-service-con-text{
     width:50%;
+    margin-left:5%
 }
 #home-service p{
     display: inline;

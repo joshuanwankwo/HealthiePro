@@ -13,11 +13,9 @@ class HomePageNav extends React.Component {
             <nav id="home-nav-con">
               <img src="./logo.svg"/>
                 <ul id="home-nav-items">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Blog</li>
+                    <li><i class="fas fa-bell"></i></li>
                     <li> <i class="fas fa-user-circle"></i></li>
+                    <button>Appointments</button>
 
                 </ul>
             </nav>

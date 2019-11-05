@@ -1,6 +1,6 @@
 .home-cards-con{
     text-align: center;
-    margin-top:10%;
+    margin: 10% 0;
 }
 .home-card{
     display:inline-block;
@@ -16,6 +16,7 @@
     color: #4290C9;
     margin:20px;
     background-color:#fff;
+    border-radius: 4px;
 }
 .home-card p{
     padding:42px;
