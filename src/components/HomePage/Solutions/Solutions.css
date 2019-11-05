@@ -1,0 +1,38 @@
+#home-solutions-con {
+    height: 80vh;
+    background-image: url("../../../assets/solutionsbackground.svg");
+    background-repeat: no-repeat;
+}
+
+#home-solutions-con div {
+    width: 50%;
+    float: right;
+    padding:5%;
+
+}
+
+#home-solutions-title {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 154.4%;
+    color: #4290C9;
+}
+
+#home-solotions-header {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 154.4%;
+    color: #35444E;
+}
+#home-solutions-text{
+    font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 154.4%;
+color: #35444E;
+}

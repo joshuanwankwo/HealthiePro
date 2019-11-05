@@ -1,5 +1,8 @@
 import React from 'react';
-import LandingPage from '../components/LandingPage/LandingPage'
+import LandingPage from '../components/LandingPage/LandingPage';
+import HomePage from '../components/HomePage/HomePage'
+import SignUp from '../components/SignupPage/SignupPage';
+import LoginPage from '../components/LoginPage/LoginPage'
 import {Switch,Route, BrowserRouter} from "react-router-dom";
 import FindADoc from '../components/find-a-doc/find-a-doctor'
 
@@ -9,14 +12,13 @@ class App extends React.Component{
         return ( 
         <div>
 
-             <BrowserRouter>
+              <BrowserRouter>
 
                 <Switch>
-                     <Route path="/" component={LandingPage} exact/>
-                     <Route path="/" component={FindADoc} />
-                    {/* <Route path="/signup" component={SignUp} />
-                    <Route path="/login" component={LoginPage} />
-                    <Route path="/homepage" component={HomePage}/>   */}
+                    <Route path="/" component={LandingPage} exact/>
+                    <Route path="/signup" component={SignUp} />
+                    <Route path="/homepage" component={HomePage}/>
+                    <Route path="/login" component={LoginPage} /> 
                 </Switch>
 
             </BrowserRouter>

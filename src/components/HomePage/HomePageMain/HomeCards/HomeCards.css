@@ -1,0 +1,23 @@
+.home-cards-con{
+    text-align: center;
+    margin: 10% 0;
+}
+.home-card{
+    display:inline-block;
+    width:271px;
+    height:313px;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 119.7%;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    color: #4290C9;
+    margin:20px;
+    background-color:#fff;
+    border-radius: 4px;
+}
+.home-card p{
+    padding:42px;
+}

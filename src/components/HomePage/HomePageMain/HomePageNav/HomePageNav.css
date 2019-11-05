@@ -1,0 +1,28 @@
+
+#home-nav-con ul {
+    float: right;
+}
+
+#home-nav-con li {
+    display: inline-block;
+    margin: 20px;
+    color: #fff;
+}
+
+#home-nav-con img {
+    margin: 20px;
+}
+
+#home-nav-con button {
+    margin: 20px;
+    background-color: #4290C9;
+    color:#fff;
+    border-radius: 4px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    padding:5px 10px;
+    border:none;
+}

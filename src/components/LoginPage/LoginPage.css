@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Login-h1-tag{
+    position: relative;
+    width: 509px;
+    height: 146px;
+    font-family: Noto Serif;
+    font-size: 48px;
+    /* line-height: 152.5%; */
+    color: #FFFFFF;
+    top: 280px;
+   left: 90px;
+}
+
+.LoginPage-parent{
+    padding: 0px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+    overflow: hidden;
+    width: 100%;
+    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%, #4E9ED8 100%), url(../../assets/Login-page-Img.png);
+}
+
+.form-body{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background: white;
+    /* width: 400px; */
+    width: 28%;
+    height: 494px;
+}
+
+.login-P{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 255px;
+    height: 74px;
+    text-align: center;
+    font-family: Noto Serif;
+    font-size: 24px;
+    line-height: 152.5%;
+    color: #4290C9;
+}
+
+.Login-Input{
+    width: 334px;
+    height: 40px;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.Login-Button{
+    height: 47px;
+    width: 314px;
+    border: 1px solid #4290C9
+}
+
+.btn1{
+    background: #4290C9;
+    color: #FFFFFF;
+}
+
+.btn2{
+    background: #FFFFFF;
+    margin-bottom: 40px;
+    color: #4290C9;
+}
+
+
+.login-Email-form-control {
+    background-image: url(../../assets/mail.png);
+    background-position: 2px 11px;
+    background-repeat: no-repeat;
+    height: 47px;
+    width: 314px;
+    padding-left: 36px;
+    
+}
+
+.login-password-form-control{
+    background-image: url(../../assets/lock.png);
+    background-position: 2px 11px;
+    background-repeat: no-repeat;
+    height: 47px;
+    width: 314px;
+    padding-left: 36px;
+    padding-top: 0px;
+    
+}
+
+Form.Label{
+    color: #4290C9;
+}
