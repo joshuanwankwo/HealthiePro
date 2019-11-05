@@ -14,9 +14,9 @@ class App extends React.Component{
                 <Switch>
                      <Route path="/" component={LandingPage} exact/>
                      <Route path="/" component={FindADoc} />
-                    {/* <Route path="/signup" component={SignUp} />
+                     <Route path="/signup" component={SignUp} />
                     <Route path="/login" component={LoginPage} />
-                    <Route path="/homepage" component={HomePage}/>   */}
+                    <Route path="/homepage" component={HomePage}/>   
                 </Switch>
 
             </BrowserRouter>
