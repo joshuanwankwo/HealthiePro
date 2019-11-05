@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 // import About from '../homePage/About/About';
 // import Services from '../homePage/Services/Services';
 // import Footer from '../homePage/Footer/Footer';
-// import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
+import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
 
 function LandingPage(props) {
     
@@ -31,7 +31,7 @@ function LandingPage(props) {
 
     </div>
 
-        <img className="doctors-img" src="./img.png" width='550px' height='650px' />           
+        <img className="doctors-img" src="./Img.png" width='550px' height='650px' />           
 
         {/* <About/>
 
