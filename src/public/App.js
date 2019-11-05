@@ -3,6 +3,7 @@ import LandingPage from '../components/LandingPage/LandingPage';
 import HomePage from '../components/HomePage/HomePage'
 import SignUp from '../components/SignupPage/SignupPage';
 import LoginPage from '../components/LoginPage/LoginPage'
+import modal from '../components/modal/modal';
 import {Switch,Route, BrowserRouter} from "react-router-dom";
 
 
@@ -18,6 +19,7 @@ class App extends React.Component{
                     <Route path="/signup" component={SignUp} />
                     <Route path="/homepage" component={HomePage}/>
                     <Route path="/login" component={LoginPage} />
+                    {/* <Route path="/modal" component={modal} /> */}
                 </Switch>
 
             </BrowserRouter>
