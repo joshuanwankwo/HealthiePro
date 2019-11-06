@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './select-Search-Doctor.css';
 
-class selectSearchedDoctor extends Component {
+class SelectSearchedDoctor extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -129,4 +129,4 @@ class selectSearchedDoctor extends Component {
 
 
 
-export default selectSearchedDoctor;
+export default SelectSearchedDoctor;
