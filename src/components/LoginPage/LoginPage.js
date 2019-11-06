@@ -68,7 +68,7 @@ class LoginPage extends React.Component {
 
                 <button className="Login-Button btn1">Login</button>
 
-                <button className="Login-Button btn2">Sign Up</button>
+                <Link to= "/signup" > <button className="Login-Button btn2">Sign Up</button> </Link>
 
             </Form>
 
