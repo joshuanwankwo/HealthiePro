@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './select-Search-Doctor.css';
 
-class selectSearchedDoctor extends Component {
+class SelectSearchedDoctor extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -48,7 +48,7 @@ class selectSearchedDoctor extends Component {
                     <div id="resultData">
                             <img src="./DrDebby.png" />
                             <div id="details">
-                            <h1 id='name'>Dr. Ifedili Joshua</h1>
+                            <h1 id='name'></h1>
                             <h2 id='specilaty'>Gynacologist</h2>
                             <h3 id='hospital'>Graceland Hospital</h3>
                             <h4 id ='address'>KM 7 Enugu Onitsha Express way Enugu, Nigeria</h4>
@@ -129,4 +129,4 @@ class selectSearchedDoctor extends Component {
 
 
 
-export default selectSearchedDoctor;
+export default SelectSearchedDoctor;
