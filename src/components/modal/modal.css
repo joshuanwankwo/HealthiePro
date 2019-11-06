@@ -1,12 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 
-#cards-wrapper{
+.cards-wrapper{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 10px auto;
+    width: 60%;
+    height: 100%;
 }
 
-#cards-wrapper > .card{
+.cards-wrapper > .card{
     width: 140px;
     margin: 15px 35px 30px 35px;
     border-radius: 0px;
@@ -15,7 +22,7 @@
 }
 
 
-#cards-wrapper > .card > h3{
+.cards-wrapper > .card > h3{
     color: #4290c9;
     text-align: center;
     padding-top: 20px;
@@ -24,6 +31,6 @@
     font-family: 'Noto Serif';
 }
 
-#cards-wrapper > .card > img{
+.cards-wrapper > .card > img{
     padding: 30px 0px 40px 0px;
 }

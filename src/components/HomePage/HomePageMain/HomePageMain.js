@@ -1,6 +1,6 @@
 import React from 'react';
 import "./HomePageMain.css";
-import HomeCards from './homeCards/HomeCards'
+import HomeCards from './HomeCards/HomeCards';
 import HomePageNav from './HomePageNav/HomePageNav';
 
 class HomePageMain extends React.Component {

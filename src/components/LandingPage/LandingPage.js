@@ -2,9 +2,11 @@ import React from 'react';
 import './LandingPage.css';
 import NavBarLandPage from './navbar/NavBarLandPage';
 import Button from '../Button/Button';
-// import About from '../homePage/About/About';
-// import Services from '../homePage/Services/Services';
-// import Footer from '../homePage/Footer/Footer';
+import About from '../homePage/About/About';
+import Services from '../homePage/Services/Services';
+import Footer from '../homePage/Footer/Footer';
+import Solutions from '../HomePage/Solutions/Solutions';
+import Team from '../HomePage/Team/Team';
 import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
 
 function LandingPage(props) {
@@ -31,13 +33,13 @@ function LandingPage(props) {
 
     </div>
 
-        <img className="doctors-img" src="./Img.png" width='550px' height='650px' />           
+        <img className="doctors-img" src="./img.png" width='550px' height='650px' />     
 
-        {/* <About/>
-
-        <Services/>
-
-        <Footer/> */}
+        <About /> 
+         <Services /> 
+         <Solutions />
+         <Team />
+         <Footer />
 
     </div>
 
