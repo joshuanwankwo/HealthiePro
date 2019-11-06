@@ -8,6 +8,7 @@ import modal from '../components/modal/modal';
 import {Switch,Route, BrowserRouter} from "react-router-dom";
 import Symptoms from '../components/symptom/symptom';
 import SelectSearchedDoctor from '../components/selectSearchDoctors/select-Search-Doctor';
+import userDashboard from '../components/userDashBoard/userDasBoard';
 
 
 class App extends React.Component{
@@ -25,6 +26,7 @@ class App extends React.Component{
                     <Route path="/modal" component={modal} />
                     <Route path="/bookdoc" component={BookDoc} />
                     <Route path="/selectSearchedDoctors" component={SelectSearchedDoctor} />
+                    <Route path="/dashboard" component={userDashboard} />
                 </Switch>
 
             </BrowserRouter>
