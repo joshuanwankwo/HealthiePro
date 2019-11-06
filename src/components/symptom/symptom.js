@@ -1,12 +1,13 @@
 import React from 'react';
-// import NavBar from '../NavBar/NavBar';
+import NavBar from '../NavBar/NavBar';
+import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
 import './symptom.css';
 
 
 function Symptoms() {
     return (
         <div id="symptoms-con">
-            {/* <NavBar/> */}
+            <NavBar/>
             <div id="symptoms-intro-con">
                 <div id="symptoms-intro">
                     <p>
@@ -94,7 +95,11 @@ function Symptoms() {
                     
 
                     <div id="symptoms-submit">
-                        <button>Submit</button>  
+
+                        <Link to ="/selectSearchedDoctors">
+                            <button>Submit</button> 
+                        </Link> 
+
                     </div>
                 </div>
 

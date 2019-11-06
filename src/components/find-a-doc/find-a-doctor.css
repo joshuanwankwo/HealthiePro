@@ -1,0 +1,38 @@
+#findADoctor-container{
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(68, 199, 191, 0.5) 0%, rgb(78, 158, 216) 100%), url("../../assets/image7.png");
+}
+
+#board{
+    width: 40%;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    
+}
+
+#board  > header{
+    color: #4290c9;
+    font-family: 'Noto Serif';
+    font-weight: bold;
+    font-size: 24px;
+    padding: 30px 0px;
+}
+
+#board > i{
+    color: #4290c9;
+    float: right;
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 10px;
+
+}

@@ -1,7 +1,6 @@
 import React from 'react';
-import "./HomePageNav.css";
-
-class HomePageNav extends React.Component {
+import './NavBar.css';
+class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -10,9 +9,9 @@ class HomePageNav extends React.Component {
 
     render() {
         return (
-            <nav id="home-nav-con">
+            <nav id="nav-con">
                 <img src="./logo1.svg" />
-                <ul id="home-nav-items">
+                <ul id="nav-items">
                     <li><i class="fas fa-bell"></i></li>
                     <li> <i class="fas fa-user-circle"></i></li>
                     <li><button>Appointment</button></li>
@@ -23,4 +22,4 @@ class HomePageNav extends React.Component {
     }
 }
 
-export default HomePageNav;
+export default NavBar;
