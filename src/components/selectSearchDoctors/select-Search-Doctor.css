@@ -8,6 +8,16 @@
     opacity: 0.7;
 }
 
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+a:hover{
+    list-style: none;
+    text-decoration: none;
+}
+
 
 #navWrapper{
     padding: 1em;

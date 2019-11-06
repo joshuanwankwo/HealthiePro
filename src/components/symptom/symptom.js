@@ -5,6 +5,9 @@ import './symptom.css';
 
 
 function Symptoms() {
+    const handleClick = ()=>{
+
+    }
     return (
         <div id="symptoms-con">
             <NavBar/>
@@ -23,9 +26,11 @@ function Symptoms() {
 
                     <div>
                         <div className="symptom-card-con-1">
+                            {/* <img src="./selectedMark.svg"/> */}
                             <p>Sore Throat</p>
                         </div>
                         <div className="symptom-card-con-1">
+                            {/* <img src="./selectedMark.svg"/> */}
                             <p>Sore Throat</p>
                         </div>
                         <div className="symptom-card-con-1">
