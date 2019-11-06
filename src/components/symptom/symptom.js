@@ -96,7 +96,7 @@ function Symptoms() {
 
                     <div id="symptoms-submit">
 
-                        <Link to ="/bookdoc">
+                        <Link to ="/selectSearchedDoctors">
                             <button>Submit</button> 
                         </Link> 
 
