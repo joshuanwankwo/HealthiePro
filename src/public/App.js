@@ -1,14 +1,12 @@
 import React from 'react';
-import {Switch,Route, BrowserRouter} from "react-router-dom";
 import LandingPage from '../components/LandingPage/LandingPage';
 import HomePage from '../components/HomePage/HomePage'
 import SignUp from '../components/SignupPage/SignupPage';
 import LoginPage from '../components/LoginPage/LoginPage'
-import Modal from '../components/modal/modal';
-import BookDoc from '../components/BookDoc/BookDoc';
-import Symptoms from '../components/Symptoms/Symptoms';
-import FindADoctor from '../components/find-a-doc/find-a-doctor';
-
+import BookDoc from '../components/BookDoc/BookDoc'
+import modal from '../components/modal/modal';
+import {Switch,Route, BrowserRouter} from "react-router-dom";
+import Symptoms from '../components/symptom/symptom';
 
 
 class App extends React.Component{
@@ -22,8 +20,9 @@ class App extends React.Component{
                     <Route path="/signup" component={SignUp} />
                     <Route path="/homepage" component={HomePage}/>
                     <Route path="/login" component={LoginPage} />
-                    <Route path="/modal" component={Modal} /> 
-                    <Route path="/symptoms" component={Symptoms} />
+                    <Route path="/symptom" component={Symptoms} />
+                    <Route path="/modal" component={modal} />
+                    <Route path="/bookdoc" component={BookDoc} />
                 </Switch>
 
             </BrowserRouter>
