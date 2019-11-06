@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Doc-profile-parent-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 579px;
+        margin-top: 30px;
+}
+
+.Doc-profile-pic{
+    width: 400px;
+    height: 100%;
+}
+
+.Doc-pro-left-side{
+    padding: 30px;
+    width: 680px;
+    height: 100vh;
+    margin-left: 30px;
+}
+
+.action-btns{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.call-msg-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100px;
+    padding: 10px;
+}
+
+

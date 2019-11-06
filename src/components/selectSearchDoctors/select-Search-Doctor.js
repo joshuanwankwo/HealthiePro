@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './select-Search-Doctor.css';
+import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
 
 class SelectSearchedDoctor extends Component {
     constructor(props) {
@@ -27,6 +28,9 @@ class SelectSearchedDoctor extends Component {
 
                     <section id="result-container">
                     <h1>Related Search</h1>
+
+            <Link to = "/DoctorProfile"  id="resultData">
+
                     <div id="resultData">
                             <img src="./DrDebby.png" />
                             <div id="details">
@@ -41,10 +45,13 @@ class SelectSearchedDoctor extends Component {
                             <img src="./Star.svg" />
                             <img src="./Star.svg" />
                             </div>
-                            <a href="#">Book Appointment  ></a>
+                            {/* <a href="#">Book Appointment  ></a> */}
                             </div>
 
-                    </div>                    
+                    </div>  
+
+                </Link>
+
                     <div id="resultData">
                             <img src="./DrDebby.png" />
                             <div id="details">
@@ -62,7 +69,9 @@ class SelectSearchedDoctor extends Component {
                             <a href="#">Book Appointment  ></a>
                             </div>
 
-                    </div>                    
+                    </div> 
+
+
                     <div id="resultData">
                             <img src="./DrDebby.png" />
                             <div id="details">
