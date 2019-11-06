@@ -1,8 +1,6 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import './loginpage.css';
-import { Switch, Route, BrowserRouter, Link } from "react-router-dom";
-
 const inputsValues = {}
 class LoginPage extends React.Component {
     constructor(props) {

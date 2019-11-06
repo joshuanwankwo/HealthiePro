@@ -1,0 +1,171 @@
+#userDashboard-aside{
+    /* border: 1px solid black; */
+    height: calc(100vh - 80px);
+    width: 20vw;
+    background-color: #35444E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#profilePic{
+    margin: 50px 120px;
+}
+
+#nav-ul{
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    
+}
+
+#nav-ul > li{
+    padding: 20px 0px;
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 140.7%;
+    color: #ffffff;
+    text-align: left;
+    list-style: none;
+}
+
+#nav-ul > li:hover{
+    background: #4290c9;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#nav-ul > li > i{
+    color: white;
+}
+
+#main{
+    display: flex;
+}
+
+#userDashboard-card-container{
+    /* border: 1px solid black; */
+    height: calc(100vh - 80px);
+    width: calc(100vw - 20vw);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+    background-color: #f8f8f8f8;
+}
+
+#userDashboard-card{
+    height: max-content;
+    width: 850px;
+    /* border: 1px solid black; */
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+    display: flex;
+}
+
+
+#time{
+    border-right: 2px solid #c4c4c4;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#time > #day{
+    font-family: 'Noto Serif';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 119.7%;
+    color: #35444E;
+}
+
+#time > #hour{
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 140.7%;
+    color: #35444E;
+}
+
+#details{
+    height: 100%;
+    width: 70%;
+    display: flex;
+
+}
+
+#icon{
+    height: fit-content;
+    margin: 10px;
+}
+
+#name{
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 140.7%;
+    color: #35444e;
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 10px;
+
+}
+
+#specialty{
+    font-family: 'Noto sans';
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 154.7%;
+    color: #35444E;
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 0px;
+}
+
+#action{
+    /* border: 1px solid black; */
+    /* height: 10%; */
+    width: 170%;
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 10px;
+}
+
+#reschedule{
+    font-family: 'Noto sans';
+    font-weight: bold;
+    font-size: 12px;
+    color: #4290c9;
+    padding-right: 40px;
+    font-style: normal;
+}
+
+#cancle{
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    font-size: 12px;
+    color: #eb5757;
+    padding-right: 5px;
+    font-style: normal;
+}
+
+#time > i{
+    color: #309c32;
+    font-size: 30px;
+}
+
+#confirm{
+    color: #27AE60;
+    font-size: 12px;
+    font-style: italic;
+}

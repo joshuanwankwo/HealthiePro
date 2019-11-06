@@ -1,0 +1,38 @@
+#nav-con{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+#nav-con ul {
+    float: right;
+}
+
+#nav-con li {
+    display: inline-block;
+    color: #4290C9;
+    border: 2px solid 1px;
+    margin:10px;
+}
+
+#nav-con i {
+    color: #4290C9;
+}
+
+#nav-con img {
+    margin:10px;
+}
+
+#nav-con button {
+    background: #4290C9;
+    border-radius: 4px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color:#fff;
+    border:none;
+    padding: 5px 10px;
+    margin-right:50px;
+}
