@@ -1,0 +1,79 @@
+#symptoms-con{
+    height:100vh;
+    display:grid;
+    grid-template: 10% 90%/1fr;
+
+}
+ #symptoms-intro-con{
+    height:100%;
+    display:flex;
+    align-content: center;
+} 
+#symptoms-intro{
+    height:100%;
+    width:50%;
+    background: linear-gradient(180deg, rgba(68, 199, 191, 0.5) 0%, #4E9ED8 100%), url('../../assets/headache.svg') no-repeat;
+    text-align:center;
+    background-position: left;
+    padding-top:20%;
+    display:inline-block;
+}
+#symptoms-intro p{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140.7%;
+    color:#fff;
+}
+#symptoms{
+    display:inline-block;
+    width:50%;
+    text-align: center;
+    margin-top:20px;
+}
+.symptom-card-con-1{
+    width:100px;
+    height:100px;
+    background:url('../../assets/backbone.svg') no-repeat;
+    background-size: cover;
+    border-radius:4px;
+    display:inline-block;
+    margin:5px;
+    
+    
+}
+.symptom-card-con-1 p{
+    padding:20px;
+  width:100%;
+  height:100%;
+  background: rgba(53, 68, 78, 0.8);
+  border-radius:4px;
+  font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15.5px;
+line-height: 154.4%;
+color:#fff;
+}
+#symptom-header{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 119.7%;
+    color:#4290C9;
+}
+#symptoms-submit button{
+    width:80%;
+    height:50px;
+    border: 2px solid #4290C9;
+    border-radius: 4px;
+    background: #4290C9;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color:#fff;
+}

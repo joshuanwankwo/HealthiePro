@@ -5,6 +5,7 @@ import SignUp from '../components/SignupPage/SignupPage';
 import LoginPage from '../components/LoginPage/LoginPage'
 import modal from '../components/modal/modal';
 import {Switch,Route, BrowserRouter} from "react-router-dom";
+import Symptoms from '../components/symptom/symptom';
 
 
 class App extends React.Component{
@@ -19,7 +20,8 @@ class App extends React.Component{
                     <Route path="/signup" component={SignUp} />
                     <Route path="/homepage" component={HomePage}/>
                     <Route path="/login" component={LoginPage} />
-                    {/* <Route path="/modal" component={modal} /> */}
+                    <Route path="/symptom" component={Symptoms} />
+                    <Route path="/modal" component={modal} />
                 </Switch>
 
             </BrowserRouter>
