@@ -10,6 +10,7 @@ class SelectSearchedDoctor extends Component {
         }
     }
     componentDidMount(){
+        // console.log('this.props', this.props)
         fetch("https://healthieapp.herokuapp.com/api/doctors")
         .then(function (response) {
             return response.json();
@@ -19,15 +20,22 @@ class SelectSearchedDoctor extends Component {
             })
              })
         setTimeout(()=>console.log(this.state.doctors[0].name), 3000)
+        this.handleClick = this.handleClick.bind(this)
     }
+
+    handleClick(doctor){
+        console.log("clicked")
+        this.props.history.push({pathname:"/doctorprofile", state: doctor})
+    }
+
     render() {
         console.log(this.state.doctors)
          let doctorsResult = this.state.doctors.map((doctor, key)=>{
              return (
 
-            <Link to ="DoctorProfile">
+            // <Link to ="DoctorProfile">
 
-                 <div id="resultData">
+                 <div id="resultData" onClick={()=>{this.handleClick(doctor)}}>
 
             
 
@@ -53,7 +61,7 @@ class SelectSearchedDoctor extends Component {
                 </div>
 
             </div>
-            </Link>
+            // </Link>
              )
              
         })
