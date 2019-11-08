@@ -299,7 +299,7 @@ body{
 }
 #home-solutions-con {
     height: 80vh;
-    background-image: url(f8c15e0363723bbe5b7b6a9d5a514bad.svg);
+    background-image: url(f8c15e0363723bbe5b7b6a9d5a514bad-solutionsbackground.svg);
     background-repeat: no-repeat;
 }
 
@@ -337,7 +337,7 @@ color: #35444E;
 }
 #home-team-con {
     height: 500px;
-    background-image: url(17594f6f14ab711d1d68aeee51c3fd50.svg)
+    background-image: url(17594f6f14ab711d1d68aeee51c3fd50-healthie-team.svg)
 }
 
 #home-team-con p {
@@ -355,7 +355,7 @@ color: #35444E;
     background-repeat: no-repeat;
     height:100vh;
     /* height:100%; */
-    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%, #4E9ED8 100%), url(f089233b71880f9ec9e133681a1dfbb8.svg);
+    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%, #4E9ED8 100%), url(f089233b71880f9ec9e133681a1dfbb8-homebackground.svg);
 
 } 
 #home-intro{
@@ -553,7 +553,7 @@ body{
     height:100%;
     overflow: hidden;
     width: 100%;
-    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%, #4E9ED8 100%), url(b2e8a143df64bff65ed9f2a764f6e0e2.png);
+    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%, #4E9ED8 100%), url(b2e8a143df64bff65ed9f2a764f6e0e2-Login-page-Img.png);
 }
 
 .form-body{    
@@ -643,7 +643,7 @@ Form.Label{
 #bookDoc-intro-pic {
     height: 100%;
     width: 50%;
-    background: linear-gradient(180deg, rgba(68, 199, 191, 0.5) 0%, #4E9ED8 100%), url(3c0987c615f9ccf410345349e67da1f8.svg) no-repeat;
+    background: linear-gradient(180deg, rgba(68, 199, 191, 0.5) 0%, #4E9ED8 100%), url(3c0987c615f9ccf410345349e67da1f8-doctorIfedi.svg) no-repeat;
     display: inline-block;
 }
 
@@ -874,9 +874,21 @@ color: #35444E;
 #navbar-con{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
+    display:  flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 12px;
+    background-color: #fff;
+    justify-content: space-between;
+    height: 12vh;
 }
 #navbar-con-ul {
-    float: right;
+    display: flex;
+    /* justify-items: center; */
+    align-items: center;
+    margin-bottom: 0px;
+    margin-right: 4.4%;
+    
 }
 
 #navbar-con-ul-li {
@@ -888,10 +900,17 @@ color: #35444E;
 
 #navbar-con-ul-li > i {
     color: #4290C9;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 39px;
+    /* padding-right: 20px; */
+    line-height: 22px;
+    margin-right: 10px;
 }
 
-#navbar-con-ul-li-img {
+#navbar-con-img {
     margin:10px;
+    margin-left: 5%;
 }
 
 #navbar-con-ul-li-btn {
@@ -908,7 +927,7 @@ color: #35444E;
     border:none;
     padding: 5px 10px;
     margin-right:50px;
-}
+} 
 #symptoms-con{
     height:100vh;
     display:grid;
@@ -923,7 +942,7 @@ color: #35444E;
 #symptoms-intro{
     height:100%;
     width:50%;
-    background: linear-gradient(180deg, rgba(68, 199, 191, 0.5) 0%, #4E9ED8 100%), url(e5af9d51e8c49fbc769ba7bc5311f1d2.svg) no-repeat;
+    background: linear-gradient(180deg, rgba(68, 199, 191, 0.5) 0%, #4E9ED8 100%), url(e5af9d51e8c49fbc769ba7bc5311f1d2-headache.svg) no-repeat;
     text-align:center;
     background-position: left;
     padding-top:20%;
@@ -946,7 +965,7 @@ color: #35444E;
 .symptom-card-con-1{
     width:100px;
     height:100px;
-    background:url(d0e354a10e7e426c4de8432ff6102b24.svg) no-repeat;
+    background:url(d0e354a10e7e426c4de8432ff6102b24-backbone.svg) no-repeat;
     background-size: cover;
     border-radius:4px;
     display:inline-block;
@@ -994,19 +1013,11 @@ color:#fff;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: left top;
-    background: linear-gradient(180deg, rgba(68, 199, 191, 0.2) 0%, #4e9ed8 100%), url(0d99b9e5b063b61cf1a7a7a51dc7a1e6.png);
+    background: linear-gradient(180deg, rgba(68, 199, 191, 0.2) 0%, #4e9ed8 100%), url(0d99b9e5b063b61cf1a7a7a51dc7a1e6-image8.png);
     opacity: 0.7;
 }
 
-a{
-    list-style: none;
-    text-decoration: none;
-}
 
-a:hover{
-    list-style: none;
-    text-decoration: none;
-}
 
 
 /* #navWrapper{
@@ -1062,7 +1073,7 @@ a:hover{
     border-radius: 3px;
 }
  */
-i{
+ #searchBox > i{
     color: #4290C9;
     font-size: 20px;
     font-weight: 600;
@@ -1079,12 +1090,11 @@ i{
     float: right;
     height: calc(100vh - 80px);
     padding: 10px;
-    background-color: white;
+    background-color: #F8F8F8;
     display: flex;
     align-items: center;
     flex-direction: column;
     overflow-y: scroll;
-
 }
 
 #relatedSearch > #searchBox{
@@ -1134,6 +1144,7 @@ i{
     /* border: 1px solid black; */
     height: max-content;
     padding: 10px;
+    /* display: flex; */
     
 }
 
@@ -1151,7 +1162,7 @@ i{
     /* border: 1px solid blue; */
     display: flex;
     padding: 10px;
-
+    
 }
 
 #details{
@@ -1159,6 +1170,8 @@ i{
     height: max-content;
     width: max-content;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 
 }
 
