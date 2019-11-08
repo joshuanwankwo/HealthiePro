@@ -6,10 +6,10 @@
 .congModalWrapper{
     background: #FFFFFF;
     border-radius: 4px;
-    width: 30%;
-    height: 60%;
+    width: 26%;
+    height: 35.00%; 
     /* border: 2px solid red; */
-    /* margin: 20px auto;  */
+    margin: 20px auto; 
 }
 
 .cong-Modal-Content{
@@ -17,13 +17,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 100%;
     height: 100%;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .cong-modal-success-Logo{
-    margin-bottom: -120px;
+    margin-bottom: -50px;
 }
 
 .cong-modal-writtenContent{
@@ -31,4 +31,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    flex-direction: column;
 }

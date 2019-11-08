@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import LandingPage from '../components/LandingPage/LandingPage';
 import HomePage from '../components/HomePage/HomePage'
 import SignUp from '../components/SignupPage/SignupPage';
@@ -11,7 +12,7 @@ import SelectSearchedDoctor from '../components/selectSearchDoctors/select-Searc
 import userDashboard from '../components/userDashBoard/userDasBoard';
 import DoctorProfile from '../components/DoctorsProfile/DoctorsProfile';
 import CongratsModal from '../components/congratsModal/congratsModal'
-import BookaDoc from '../components/BookaDoc/BookaDoc'
+// import BookaDoc from '../components/BookaDoc/BookaDoc'
 
 
 class App extends React.Component{
@@ -33,7 +34,7 @@ class App extends React.Component{
                     <Route path="/dashboard" component={userDashboard} />
                     <Route path="/bookdoctor" component={BookDoc} />
                     <Route path="/congrats" component={CongratsModal} />
-                    <Route path="/bookadoc" component={BookaDoc} />
+                    {/* <Route path="/bookadoc" component={BookaDoc} /> */}
                 </Switch>
 
             </BrowserRouter>

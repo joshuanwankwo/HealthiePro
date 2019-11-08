@@ -71,7 +71,7 @@ class SelectSearchedDoctor extends Component {
                 </div>
                 <div id="relatedSearch">
                     <div id="searchBox">
-                    <input type="search" placeholder="ifedili"/>
+                    <input type="search" placeholder="Search..."/>
                     <i class="fas fa-search"></i>
                     </div>
 

@@ -18,13 +18,20 @@ class CongratsModal extends Component {
             </div>
 
 <div className="cong-modal-writtenContent">
-            <p>
-                successful
-            </p>
 
-                    <p>
+<div>
+            <p>
+               Appointment Booked Successfully
+            </p>
+</div>
+
+
+<div>
+                   <Link to ="/homepage" > <p>
                         continue
-                    </p>
+                    </p> </Link>
+</div>
+
 </div>
     </div>
                     
