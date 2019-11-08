@@ -12,58 +12,58 @@ class UserSetting extends Component {
         return ( 
             <div>
                 <NavBar />
-                <div id='container'>
+                <div id='user-Profile-Setting-container'>
                 <Sidenav />
-                <div id='userSettings'>
-                        <div id='settingWrapper'>
-                            <div  id='top'>
-                            <h5 id='title'>Basic Information</h5>
-                            <h5 id='saveSetting'>Edit Details</h5>
+                <div id='user-Profile-Setting-userSettings'>
+                        <div id='user-Profile-Setting-settingWrapper'>
+                            <div  id='user-Profile-Setting-settingWrapper-top'>
+                            <h5 id='user-Profile-Setting-settingWrapper-title'>Basic Information</h5>
+                            <h5 id='user-Profile-Setting-settingWrapper-saveSetting'>Edit Details</h5>
                             </div>
-                            <form>
-                            <div id='roww'>
+                            <form id="user-Profile-Setting-settingWrapper-form">
+                            <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 <label for='firstName'>First Name</label>
                                 <label for='firstName'>Last Name</label>
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 <h5>Emeka</h5>
                                 <h5>Nwaogu</h5>
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 <label for='firstName'>Email Address</label>
                                 <label for='firstName'>Phone Number</label>
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 <h5>emekanwaogu@gmail.com</h5>
                                 <h5>07063358662</h5>
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 <label for='firstName'>Address</label>
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 <h5>Enugu Lifestyle and Goif City (Centenary City) Kilometer 7, Enugu/Port Harcourt Expressway Enugu, Nigeria'</h5>
                                 </div>
-                                <div  id='top'>
+                                <div  id='user-Profile-Setting-settingWrapper-top'>
                                 <h5 id='title'>Next of Kin Information</h5>
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
 
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 <label for='firstName'>First Name</label>
                                 <label for='firstName'>Last Name</label>
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 <label for='firstName'>Email Address</label>
                                 <label for='firstName'>Phone Number</label>
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
   
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 <label for='firstName'>Address</label>
                                 </div>
-                                <div id='roww'>
+                                <div id='user-Profile-Setting-settingWrapper-form-roww'>
                                 </div>
                             </form>
                         </div>

@@ -47,7 +47,7 @@
     display: flex;
 }
 
-#userDashboard-card-container{
+#Dashboard-card-container{
     /* border: 1px solid black; */
     height: calc(100vh - 80px);
     width: calc(100vw - 20vw);

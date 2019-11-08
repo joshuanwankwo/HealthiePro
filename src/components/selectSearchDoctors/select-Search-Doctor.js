@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './select-Search-Doctor.css';
 import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
+import NavBar from '../NavBar/NavBar';
 
 class SelectSearchedDoctor extends Component {
     constructor(props) {
@@ -59,16 +60,7 @@ class SelectSearchedDoctor extends Component {
         })
         return (
             <div id="searchedDoctorsContainer">
-                <div id="navWrapper">
-                    <div className="fdoc-logo">
-                        <img src="./Healthie-Logo2.svg" id="fdoc-logo" />
-                    </div>
-                    <div className="fdoc-navigation">
-                    <i class="fas fa-user-circle"></i>
-                    <i class="fas fa-bell"></i>
-                        <a href="#" >Appointment</a>
-                    </div>
-                </div>
+                    <NavBar />
                 <div id="relatedSearch">
                     <div id="searchBox">
                     <input type="search" placeholder="ifedili"/>

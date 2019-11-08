@@ -12,10 +12,9 @@ class userDashboard extends Component {
     render() {
         return (
             <div>
-                <NavBar />
                 <div id='main'>
                 <Sidenav />
-                    <div id='userDashboard-card-container'>
+                    <div id='Dashboard-card-container'>
                         <div id='userDashboard-card'>
                             <div id='time'>
                                 <h5 id='day'>4 Days</h5>

@@ -1,4 +1,4 @@
-#aside{
+#sidenav{
     /* border: 1px solid black; */
     height: calc(100vh - 80px);
     width: 20vw;
@@ -9,12 +9,12 @@
 
 }
 
-#profilePic{
+#sidenav-profilePic{
     margin: 50px 120px;
     width: 35%;
 }
 
-#nav-ul{
+#sidenav-ul{
     /* border: 1px black solid; */
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     
 }
 
-#nav-ul > li{
+#sidenav-ul-li{
     padding: 10px 10px;
     font-family: 'Noto Sans';
     font-size: 16px;
@@ -35,12 +35,12 @@
     /* border: 2px solid; */
 }
 
-#nav-ul > li:hover{
+#sidenav-ul-li:hover{
     background: #4290c9;
     cursor: pointer;
     border-radius: 0px;
 }
 
-#nav-ul > li > i{
+#sidenav-ul-li i{
     color: white;
 }
