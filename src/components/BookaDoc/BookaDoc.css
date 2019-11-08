@@ -2,34 +2,17 @@
     display: grid;
     grid-template: 10% 90%/1fr;
     height: 100vh;
-} */
-
-#parent-con{
-    display: flex;
-    /* flex-wrap: wrap; */
-    width: 100%;
-    /* justify-content: space-around; */
-    align-items: center;
-    border: 2px solid red;
 }
 
-/* #image-con{
-    width: 745px;
-} */
-
-/* #bookDoc-form-con {
+#bookDoc-form-con {
     display: flex;
-} */
+}
 
-/* #bookDoc-intro-pic {
-    height: 100vh;
-    width: 50%;
-
-} */
-
-.Doc-profile-pic{
-    width: 50%;
+#bookDoc-intro-pic {
     height: 100%;
+    width: 50%;
+    background: linear-gradient(180deg, rgba(68, 199, 191, 0.5) 0%, #4E9ED8 100%), url('../../assets/doctorIfedi.svg') no-repeat;
+    display: inline-block;
 }
 
 #bookDoc-form {
@@ -255,4 +238,4 @@ color: #35444E;
     font-size: 18px;
     line-height: 25px;
     color:#fff;
-}
+} */

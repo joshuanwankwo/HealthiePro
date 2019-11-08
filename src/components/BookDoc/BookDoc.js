@@ -33,7 +33,7 @@ import CongratsModal from '../congratsModal/congratsModal';
 
 
 
-     <div> 
+     <div id="parent-con"> 
      
      {this.state.display === true && <div onClick={this.handleModal} style={{
          position:'absolute',
@@ -50,14 +50,15 @@ import CongratsModal from '../congratsModal/congratsModal';
 
      </div>}
 
+               
+          {/* <img id="bookDoc-intro-pic" src="./doctorIfedili.jpg" width="100%" height="100vh" /> */}
 
-
+      <div>
+         <img className="Book-Doc-profile-pic" src="./DoctorsProfile.jpg"  />
+    </div>  
       
-         <div id="bookDoc-form-con">
-            <div id="bookDoc-intro-pic">
-               {/* background image container */}
-            </div>
-            <form id="bookDoc-form">
+     <form id="bookDoc-form">
+
                <div id="bookDoc-doc-info">
                   <img src="./bookdoc-doc-info.svg" />
                   <p>Request Appointment With Dr. Ifedili Joshua</p>
@@ -66,15 +67,8 @@ import CongratsModal from '../congratsModal/congratsModal';
                   <input placeholder="New Heaven Hospital, Enugu" />
                   <img src="./dropdown.svg" />
                </div>
-               <form id="bookDoc-form">
-                  <div id="bookDoc-doc-info">
-                     <img src="./bookdoc-doc-info.svg" />
-                     <p>Request Appointment With Dr. Ifedili Joshua</p>
-                  </div>
-                  <div id="bookDoc-input-hospital">
-                     <input placeholder="New Heaven Hospital, Enugu" />
-                     <img src="./dropdown.svg" />
-                  </div>
+
+                 
 
                   <div id="bookDoc-input-schedule-con">
                      <div id="bookDoc-input-date">
@@ -130,11 +124,8 @@ import CongratsModal from '../congratsModal/congratsModal';
 
 
             </form>
-         </form>
-         
-
-          </div>
        </div>
+
 
    )}
 }
