@@ -3,7 +3,7 @@ import './userProfileSetting.css';
 import NavBar from '../NavBar/NavBar';
 import Sidenav from '../sideNav/sideNav';
 
-class UserSetting extends Component {
+class UserSetting extends React.Component {
     constructor(props) {
         super(props);
         this.state = {  }
