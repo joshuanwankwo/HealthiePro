@@ -1,8 +1,58 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './BookDoc.css';
-function BookDoc(props) {
-   return (
-      <div id="bookDoc-con">
+import CongratsModal from '../congratsModal/congratsModal';
+
+
+   class BookDoc extends Component {
+      constructor(props){
+          super(props)
+          this.state = { 
+             display:false
+          }
+          this.handleModal = this.handleModal.bind(this)
+     }
+
+     handleModal(event){
+      event.preventDefault();
+        this.setState({display:true})
+        console.log("i clicked")
+     }
+
+
+     render() { 
+   return ( 
+      
+   //       <div style={{
+   //       width:'100vw',
+   //       height:'100vh',
+   //       display:'flex',
+   //       alignItems:'center',
+   //       justifyContent:'center',
+   //       position:'relative'
+   //   }}>
+
+
+
+     <div> 
+     
+     {this.state.display === true && <div onClick={this.handleModal} style={{
+         position:'absolute',
+         position:'fixed',
+         width:'100%',
+         height:'100%',
+         background:'linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6))',
+         top:'0px',
+         display:'flex',
+         alignItems:'center',
+         justifyContent:'center'
+     }}>
+         <CongratsModal />
+
+     </div>}
+
+
+
+      <div id="bookDoc-con" >
          <div id="bookDoc-form-con">
             <div id="bookDoc-intro-pic">
                {/* background image container */}
@@ -65,13 +115,16 @@ function BookDoc(props) {
                   </div>
                </div>
 
-               <button id="bookDoc-form-Submit">Submit</button>
+
+
+               <button onClick={this.handleModal}  id="bookDoc-form-Submit">Submit</button>
 
             </form>
          </div>
 
-      </div>
+          </div>
+      // </div>
 
-   )
+   )}
 }
 export default BookDoc;

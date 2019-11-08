@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.congModalWrapper{
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 30%;
+    height: 60%;
+    /* border: 2px solid red; */
+    /* margin: 20px auto;  */
+}
+
+.cong-Modal-Content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+.cong-modal-success-Logo{
+    margin-bottom: -120px;
+}
+
+.cong-modal-writtenContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -10,6 +10,7 @@ import Symptoms from '../components/symptom/symptom';
 import SelectSearchedDoctor from '../components/selectSearchDoctors/select-Search-Doctor';
 import userDashboard from '../components/userDashBoard/userDasBoard';
 import DoctorProfile from '../components/DoctorsProfile/DoctorsProfile';
+import CongratsModal from '../components/congratsModal/congratsModal'
 
 
 class App extends React.Component{
@@ -30,6 +31,7 @@ class App extends React.Component{
                     <Route path="/selectSearchedDoctors" component={SelectSearchedDoctor} />
                     <Route path="/dashboard" component={userDashboard} />
                     <Route path="/bookdoctor" component={BookDoc} />
+                    <Route path="/congrats" component={CongratsModal} />
                 </Switch>
 
             </BrowserRouter>
