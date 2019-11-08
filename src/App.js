@@ -6,13 +6,13 @@ import LoginPage from './components/LoginPage/LoginPage'
 import BookDoc from './components/BookDoc/BookDoc'
 import modal from './components/modal/modal';
 import {Switch,Route, BrowserRouter} from "react-router-dom";
-import Symptoms from './components/symptom/symptom';
-import SelectSearchedDoctor from './components/selectSearchDoctors/select-Search-Doctor';
-import UserDashboard from './components/userDashBoard/userDasBoard';
-import DoctorProfile from './components/DoctorsProfile/DoctorsProfile';
-import UserSetting from './components/userProfileSetting/userProfileSetting';
-import UserLayout from './components/Layout/UserLayout';
-
+import Symptoms from '../components/symptom/symptom';
+import SelectSearchedDoctor from '../components/selectSearchDoctors/select-Search-Doctor';
+import userDashboard from '../components/userDashBoard/userDasBoard';
+import DoctorProfile from '../components/DoctorsProfile/DoctorsProfile';
+import CongratsModal from '../components/congratsModal/congratsModal'
+import BookaDoc from '../components/BookaDoc/BookaDoc'
+import BookaDoc from '../components/BookaDoc/BookaDoc'
 
 class App extends React.Component{
     render(){
@@ -31,12 +31,13 @@ class App extends React.Component{
                     <Route path="/doctorprofile" component={DoctorProfile} />
                     <Route path="/selectSearchedDoctors" component={SelectSearchedDoctor} />
                     <Route path="/dashboard" render={props =>  <UserLayout>
-                        <UserDashboard />
+                    <UserDashboard />
                     </UserLayout>} />
                     <Route path="/bookdoctor" component={BookDoc} />
                     <Route path="/setting" component={UserSetting} />
+                    <Route path="/congrats" component={CongratsModal} />
+                    <Route path="/bookadoc" component={BookaDoc} />
                 </Switch>
-
             </BrowserRouter>
 
         </div>
