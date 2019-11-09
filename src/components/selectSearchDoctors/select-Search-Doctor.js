@@ -41,7 +41,7 @@ class SelectSearchedDoctor extends Component {
 
             
 
-                <img src="./DrDebby.png" />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230051/healthie/DrDebby_snh9xq.png')} />
                 <div id="details">
                 <h1 id='name'>{doctor.name}</h1>
                 <h2 id='specilaty'>{doctor.specialty}</h2>

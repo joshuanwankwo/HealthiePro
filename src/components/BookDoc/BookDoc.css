@@ -1,17 +1,19 @@
-/* #bookDoc-con {
+ #bookDoc-con {
     display: grid;
     grid-template: 10% 90%/1fr;
     height: 100vh;
-} */
-
-#parent-con{
-    display: flex;
-    /* flex-wrap: wrap; */
-    width: 100%;
-    /* justify-content: space-around; */
-    align-items: center;
-    /* border: 2px solid red; */
+} 
+#bookdoc-child-con{
+    display:flex;
+    width:100%;
 }
+ /* #parent-con{
+     flex-wrap: wrap; 
+    width: 100%;
+     justify-content: space-around; 
+    align-items: center;
+    border: 2px solid red;
+}  */
 
 /* #image-con{
     width: 745px;
@@ -28,9 +30,9 @@
 } */
 
 .Book-Doc-profile-pic{
-    /* width: 50%;
-    height: 100%; */
-    width: 500px;
+    width:100%;
+    display: inline-block;
+    height: 100%;
 }
 
 #bookDoc-form {
