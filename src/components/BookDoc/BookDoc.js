@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import './BookDoc.css';
 import CongratsModal from '../congratsModal/congratsModal';
 
+import cloudinary from 'cloudinary-core';
+const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
+
+
 
    class BookDoc extends Component {
       constructor(props){
@@ -51,12 +55,12 @@ import CongratsModal from '../congratsModal/congratsModal';
      <form id="bookDoc-form">
 
                <div id="bookDoc-doc-info">
-                  <img src="./bookdoc-doc-info.svg" />
+                  <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230048/healthie/bookdoc-doc-info_d1mbfq.svg')} />
                   <p>Request Appointment With Dr. Ifedili Joshua</p>
                </div>
                <div id="bookDoc-input-hospital">
                   <input placeholder="New Heaven Hospital, Enugu" />
-                  <img src="./dropdown.svg" />
+                  <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230055/healthie/dropdown_llk5ae.svg')}/>
                </div>
 
                  
@@ -64,11 +68,11 @@ import CongratsModal from '../congratsModal/congratsModal';
                   <div id="bookDoc-input-schedule-con">
                      <div id="bookDoc-input-date">
                         <input placeholder="27 September 2019" />
-                        <img src="./calender.svg" />
+                        <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230040/healthie/calender_bshzcy.svg')} />
                      </div>
                      <div id="bookDoc-input-time">
                         <input placeholder="Select Time" />
-                        <img src="./dropdown.svg" />
+                     <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230055/healthie/dropdown_llk5ae.svg')} />
                      </div>
                   </div>
 
@@ -87,7 +91,7 @@ import CongratsModal from '../congratsModal/congratsModal';
                   <div id="bookDoc-input-phone-con">
                      <div id="bookDoc-input-code">
                         <input placeholder="Nigeria (+234)" />
-                        <img src="./dropdown.svg" />
+                        <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230055/healthie/dropdown_llk5ae.svg')} />
                      </div>
                      <div id="bookDoc-input-phone">
                         <input placeholder="Mobile Number" />
@@ -105,7 +109,7 @@ import CongratsModal from '../congratsModal/congratsModal';
                      </div>
                      <div id="bookDoc-input-time">
                         <input placeholder="Gender" />
-                        <img src="./dropdown.svg" />
+                        <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230055/healthie/dropdown_llk5ae.svg')} />
                      </div>
                   </div>
 

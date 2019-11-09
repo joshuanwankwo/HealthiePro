@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './select-Search-Doctor.css';
-import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
+
+import cloudinary from 'cloudinary-core';
+const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
+
 
 class SelectSearchedDoctor extends Component {
     constructor(props) {
@@ -32,8 +35,7 @@ class SelectSearchedDoctor extends Component {
         console.log(this.state.doctors)
          let doctorsResult = this.state.doctors.map((doctor, key)=>{
              return (
-
-            // <Link to ="DoctorProfile">
+            //map through the doctors on the data base and showcase them on client side
 
                  <div id="resultData" onClick={()=>{this.handleClick(doctor)}}>
 
@@ -49,11 +51,11 @@ class SelectSearchedDoctor extends Component {
                 
 
                 <div id="star">
-                <img src="./Star.svg" />
-                <img src="./Star.svg" />
-                <img src="./Star.svg" />
-                <img src="./Star.svg" />
-                <img src="./Star.svg" />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
                 </div>
 
                  <a href="#">Book Appointment  ></a> 
@@ -61,7 +63,6 @@ class SelectSearchedDoctor extends Component {
                 </div>
 
             </div>
-            // </Link>
              )
              
         })
@@ -69,7 +70,7 @@ class SelectSearchedDoctor extends Component {
             <div id="searchedDoctorsContainer">
                 <div id="navWrapper">
                     <div className="fdoc-logo">
-                        <img src="./Healthie-Logo2.svg" id="fdoc-logo" />
+                        <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230076/healthie/logo1_iesguq.svg')} id="fdoc-logo" />
                     </div>
                     <div className="fdoc-navigation">
                     <i class="fas fa-user-circle"></i>

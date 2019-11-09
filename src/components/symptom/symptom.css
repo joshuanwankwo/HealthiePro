@@ -12,7 +12,7 @@
 #symptoms-intro{
     height:100%;
     width:50%;
-    background: linear-gradient(180deg, rgba(68, 199, 191, 0.5) 0%, #4E9ED8 100%), url('../../assets/headache.svg') no-repeat;
+    background: linear-gradient(180deg, rgba(68, 199, 191, 0.5) 0%, #4E9ED8 100%), url('https://res.cloudinary.com/healthie/image/upload/v1573230075/healthie/headache_umsduv.svg') no-repeat;
     text-align:center;
     background-position: left;
     padding-top:20%;
@@ -35,7 +35,7 @@
 .symptom-card-con-1{
     width:100px;
     height:100px;
-    background:url('../../assets/backbone.svg') no-repeat;
+    background:url('https://res.cloudinary.com/healthie/image/upload/v1573230048/healthie/backbone_ryva97.svg') no-repeat;
     background-size: cover;
     border-radius:4px;
     display:inline-block;

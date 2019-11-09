@@ -29,7 +29,7 @@ body{
     height:100%;
     overflow: hidden;
     width: 100%;
-    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%,#35444E 100%), url(../../assets/Login-page-Img.png);
+    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%,#35444E 100%), url(https://res.cloudinary.com/healthie/image/upload/v1573230089/healthie/Login-page-Img_gcttby.png);
 }
 
 .form-body{    
@@ -83,7 +83,7 @@ body{
 
 
 .login-Email-form-control {
-    background-image: url(../../assets/mail.png);
+    background-image: url('https://res.cloudinary.com/healthie/image/upload/v1573230078/healthie/mail_pgj752.png');
     background-position: 2px 11px;
     background-repeat: no-repeat;
     height: 47px;
@@ -93,7 +93,7 @@ body{
 }
 
 .login-password-form-control{
-    background-image: url(../../assets/lock.png);
+    background-image: url('https://res.cloudinary.com/healthie/image/upload/v1573230073/healthie/lock_xtyyas.png');
     background-position: 2px 11px;
     background-repeat: no-repeat;
     height: 47px;
