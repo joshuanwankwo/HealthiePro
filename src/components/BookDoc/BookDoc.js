@@ -120,9 +120,7 @@ class BookDoc extends Component {
 
 
                </form>
-
             </div>
-
          </div>
 
 
