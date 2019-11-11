@@ -1,12 +1,19 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import './LoginPage.css';
-import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
+import { Switch, Route, BrowserRouter, Link } from "react-router-dom";
+
+let styles = {
+    display: 'none'
+}
 const inputsValues = {}
 class LoginPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            loadingStyle: {
+                display: 'none'
+            },
             userData: null,
             login: false
         }
@@ -25,6 +32,13 @@ class LoginPage extends React.Component {
         }
         console.log(inputsValues)
     }
+    handleClick() {
+        this.setState({
+            loadingStyle: {
+                display: 'block'
+            }
+        })
+    }
     handleSubmit(event) {
         event.preventDefault();
         fetch("https://healthieapp.herokuapp.com/api/users/signin", {
@@ -33,47 +47,52 @@ class LoginPage extends React.Component {
             body: JSON.stringify(inputsValues)
         }).then(function (response) {
             return response.json();
-        }).then((body) =>{
+        }).then((body) => {
             console.log(body.success)
-            if(body.success){
+            if (body.success) {
                 this.setState({
-                    login:true
+                    login: true
                 })
                 console.log(`it is ${this.state.login}`)
                 this.props.history.push('/HomePage')
             }
         });
-    if(this.state.login){
-        this.props.history
-    }
+        if (this.state.login) {
+            this.props.history
+        }
     }
     render() {
-        return <div className="LoginPage-parent">
-            <Form className="form-body" onSubmit={this.handleSubmit.bind(this)}>
+        return (
+            <div className="LoginPage-parent">
+                <Form className="login-form-body" onSubmit={this.handleSubmit.bind(this)}>
 
+                    <div className="login-P">
+                        <p>We provide the best </p>
+                        <p>health care service</p>
 
-                <p className="login-P">We provide the best health care service</p>
+                    </div>
 
+                    <Form.Group className="login-input-container" controlId="formGroupEmail">
+                        <Form.Label className="login-form-label">Email address</Form.Label>
+                        <Form.Control name="email" required className="login-Email-form-control" type="email" onChange={this.handleChange.bind(this)} />
+                    </Form.Group>
 
-                <Form.Group controlId="formGroupEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control name="email" required className="login-Email-form-control" type="email" onChange={this.handleChange.bind(this)} />
-                </Form.Group>
+                    <Form.Group className="login-input-container" controlId="formGroupPassword">
+                        <Form.Label className="login-form-label">Password</Form.Label>
+                        <Form.Control name="password" required className="login-password-form-control" type="password" onChange={this.handleChange.bind(this)} />
+                    </Form.Group>
 
-                <Form.Group controlId="formGroupPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control name="password" required className="login-password-form-control" type="password" onChange={this.handleChange.bind(this)} />
-                </Form.Group>
+                    <button className="Login-Button btn1">Login</button>
 
-                <button className="Login-Button btn1">Login</button>
+                    <Link className="btn2-con" to="/signup">
+                        <button className="Login-Button btn2" >Sign Up</button>
+                    </Link>
 
-                <Link to= "/signup" > <button className="Login-Button btn2">Sign Up</button> </Link>
+                </Form>
 
-            </Form>
+            </div>
 
-        </div>
-
-
+        )
     }
 }
 
