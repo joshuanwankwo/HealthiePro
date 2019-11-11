@@ -1,56 +1,51 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 module.exports = {
-  entry: './src/public/index.js',
-  output: {
-    path: path.resolve("./dist"),
-    filename: "bundle.js"
-    // publicPath: "./"   
-  },
-  devServer: {
-    contentBase: './src/assets',
-    port: 2019,
-    historyApiFallback: true
-  },
-  module: {
-    rules: [
-      
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.css$/,
-        loader: "style-loader!css-loader"
-      },
-      {
-        test: /\.(jpe?g|gif|png|svg)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 10000
-            }
-          }
+    entry: './src/index.js',
+    output: {
+        path: path.join(__dirname, '/dist'),
+        filename: './index_bundle.js'
+    },
+    devServer: {
+        inline: true,
+        contentBase: './src/assets',
+        port: 2019,
+        historyApiFallback: true
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js|jsx|json$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: "html-loader",
+                        options: { minimize: true }
+                    }
+                ]
+            },
+            {
+                test: /\.(png|jp(e*)g|gif|pdf|svg|doc)$/i,
+                loader: 'url-loader',
+                options: {
+                    limit: 8000, //converts images <8kb to base64 strings
+                    name: '[hash]-[name].[ext]'
+                }
+            },
+            
         ]
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader"
-          }
-        ]
-      }
+    },
+    plugins: [
+        new HtmlWebPackPlugin({
+            template: "./public/index.html",
+            filename: "./index.html",
+            hash: true
+        }),
     ]
-  },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/public/index.html",
-      filename: "./index.html"
-    })
-  ]
-};
+}

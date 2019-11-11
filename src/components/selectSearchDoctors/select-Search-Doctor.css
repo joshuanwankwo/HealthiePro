@@ -8,18 +8,10 @@
     opacity: 0.7;
 }
 
-a{
-    list-style: none;
-    text-decoration: none;
-}
-
-a:hover{
-    list-style: none;
-    text-decoration: none;
-}
 
 
-#navWrapper{
+
+/* #navWrapper{
     padding: 1em;
     height: 80px;
     display: flex;
@@ -53,8 +45,8 @@ a:hover{
 .fdoc-navigation >a{
     color: white;
     font-size: 15px;
-    /* padding-left: 20px;
-    padding-right: 20px; */
+    padding-left: 20px;
+    padding-right: 20px; 
     font-weight: normal;
     line-height: 22px;
     font-family: 'Noto Sans';
@@ -71,8 +63,8 @@ a:hover{
     color:  white;
     border-radius: 3px;
 }
-
-i{
+ */
+ #searchBox > i{
     color: #4290C9;
     font-size: 20px;
     font-weight: 600;
@@ -89,12 +81,11 @@ i{
     float: right;
     height: calc(100vh - 80px);
     padding: 10px;
-    background-color: white;
+    background-color: #F8F8F8;
     display: flex;
     align-items: center;
     flex-direction: column;
     overflow-y: scroll;
-
 }
 
 #relatedSearch > #searchBox{
@@ -144,6 +135,7 @@ i{
     /* border: 1px solid black; */
     height: max-content;
     padding: 10px;
+    /* display: flex; */
     
 }
 
@@ -161,7 +153,7 @@ i{
     /* border: 1px solid blue; */
     display: flex;
     padding: 10px;
-
+    
 }
 
 #details{
@@ -169,6 +161,8 @@ i{
     height: max-content;
     width: max-content;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 
 }
 

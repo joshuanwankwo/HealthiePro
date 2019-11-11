@@ -13,9 +13,9 @@ function Footer(props) {
                         on the Healthie platform - revolutionize the <br></br>
                         way hospitals and other clinical care <br></br>
                         facilities operate and interact with patients.  </p>
+                <p id="follow" >Follow Us</p>
 
                 </div>
-
                 <div id="footer-blog">
                     <p id="home-recent-blog">Recent Blog Posts</p>
                     <p className="home-footer-texts"><strong>Healthie</strong>: Your weight and how its affecting<br></br> your daily living</p>

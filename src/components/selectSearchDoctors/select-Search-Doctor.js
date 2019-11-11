@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import './select-Search-Doctor.css';
+<<<<<<< HEAD
 
 import cloudinary from 'cloudinary-core';
 const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
 
+=======
+import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
+import NavBar from '../NavBar/NavBar';
+>>>>>>> 217e3b8130f5c2556de7843898f00fbf744eb16a
 
 class SelectSearchedDoctor extends Component {
     constructor(props) {
@@ -68,6 +73,7 @@ class SelectSearchedDoctor extends Component {
         })
         return (
             <div id="searchedDoctorsContainer">
+<<<<<<< HEAD
                 <div id="navWrapper">
                     <div className="fdoc-logo">
                         <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230076/healthie/logo1_iesguq.svg')} id="fdoc-logo" />
@@ -78,6 +84,9 @@ class SelectSearchedDoctor extends Component {
                         <a href="#" >Appointment</a>
                     </div>
                 </div>
+=======
+                    <NavBar />
+>>>>>>> 217e3b8130f5c2556de7843898f00fbf744eb16a
                 <div id="relatedSearch">
                     <div id="searchBox">
                     <input type="search" placeholder="Search..."/>

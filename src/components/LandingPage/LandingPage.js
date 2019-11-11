@@ -29,6 +29,7 @@ function LandingPage(props) {
                 Since the first day of operation Healthie, our team has been
                 focused on building a high-quality healthcare services
         </p>
+<<<<<<< HEAD
 
             <div>
                 <Link to="/signup">
@@ -39,6 +40,16 @@ function LandingPage(props) {
         </div>
 
         <img className="doctors-img" src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230072/healthie/Img_kwifbg.png')} width='550px' height='650px' />
+=======
+        
+        <div>
+            <Button bg={'#4290C9'} buttonName={`Book Appointment`} width={`290px`} height={`59px`} marginTop={`550px`} marginLeft={`60px`} padding={`20px`} /> 
+        </div>
+
+        <img className="doctors-img" src="./Img.png" width='' height='' />     
+    </div>
+
+>>>>>>> 217e3b8130f5c2556de7843898f00fbf744eb16a
 
         <About />
         <Services />
