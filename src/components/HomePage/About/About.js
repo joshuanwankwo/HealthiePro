@@ -5,7 +5,7 @@ function About(props) {
     return (
         <div id="about-con">
             <section id="about">
-                <img src="./aboutus.svg" />
+                <img src="./aboutus.png" />
                 <div id="about-details">
                     <p id="about-title">About Us</p>
                     <p id="about-title-1"> Professional Health<br></br> Care in Full Measure</p>

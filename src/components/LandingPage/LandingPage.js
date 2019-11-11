@@ -28,12 +28,12 @@ function LandingPage(props) {
         </p>
         
         <div>
-            <Button bg={'#4290C9'} buttonName={`Book Appointment`} width={`290px`} height={`59px`} marginTop={`500px`} marginLeft={`40px`} /> 
+            <Button bg={'#4290C9'} buttonName={`Book Appointment`} width={`290px`} height={`59px`} marginTop={`550px`} marginLeft={`60px`} padding={`20px`} /> 
         </div>
 
+        <img className="doctors-img" src="./Img.png" width='' height='' />     
     </div>
 
-        <img className="doctors-img" src="./Img.png" width='550px' height='650px' />     
 
         <About /> 
          <Services /> 

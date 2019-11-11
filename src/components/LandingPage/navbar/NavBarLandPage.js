@@ -7,7 +7,7 @@ class NavBarLandPage extends React.Component{
         super(props);
         
     this.state = {
-      Navlinks: [{link: "Home", id:1}, {link: "About", id:2}, {link: "Services", id:3}, {link: "Blog", id:4}]
+      Navlinks: [{link: "Home", id:1}, {link: "About", id:2}, {link: "Services", id:3}]
     };
 
 }
@@ -29,7 +29,7 @@ class NavBarLandPage extends React.Component{
 
                     <div className="navitems"> {Navitems} </div>
 
-                        <div className="spacer"></div>
+                        {/* <div className="spacer"></div> */}
 
 
                     <div className="Navbtn-group">

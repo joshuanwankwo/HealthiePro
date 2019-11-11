@@ -5,7 +5,7 @@ function Services(props) {
     return (
         <section id="home-service-con">
             <div id="service-background-con">
-                <img src="./testo.svg" />
+                <img id="testo" src="./testo.png" />
             </div>
             <div id="home-service">
             

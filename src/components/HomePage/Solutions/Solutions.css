@@ -2,12 +2,19 @@
     height: 80vh;
     background-image: url("../../../assets/solutionsbackground.svg");
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 50px 0px 0px;
 }
 
 #home-solutions-con div {
-    width: 50%;
-    float: right;
-    padding:5%;
+    width: 40%;
+    /* float: right; */
+    padding: 0%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
 
 }
 
