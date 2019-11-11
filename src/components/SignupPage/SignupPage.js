@@ -98,43 +98,36 @@ render() {
           Create Patient Account
         </p>
 
-        <Form.Row>
-          <Form.Group as={Col} controlId="formGridEmail">
+        <Form.Row className="signup-row-input-con">
+          <Form.Group as={Col} controlId="formGridEmail" className="signup-FormGroup-con">
             <Form.Label className="signup-label">First Name</Form.Label>
             <Form.Control name="firstName" type="Text" className="signup-FormGroup" required onChange={this.handleChange.bind(this)} />
           </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridPassword">
+          <Form.Group as={Col} controlId="formGridPassword" className="signup-FormGroup-con">
             <Form.Label className="signup-label">Last Name</Form.Label>
             <Form.Control name="lastName" type="Text" className="signup-FormGroup" onChange={this.handleChange.bind(this)} />
           </Form.Group>
         </Form.Row>
 
         <Form.Row>
-          <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label className="signup-label">Address</Form.Label>
-            <Form.Control name="address" type="text" className="signup-FormGroup" required onChange={this.handleChange.bind(this)} />
-          </Form.Group>
-        </Form.Row>
-
-        <Form.Row>
-          <Form.Group as={Col} controlId="formGridEmail" >
+          <Form.Group as={Col} controlId="formGridEmail" className="signup-FormGroup-con">
             <Form.Label className="signup-label">Email</Form.Label>
             <Form.Control name="email" type="email" className="signup-FormGroup" onChange={this.handleChange.bind(this)} />
           </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridPassword">
+          <Form.Group as={Col} controlId="formGridPassword" className="signup-FormGroup-con">
             <Form.Label className="signup-label">Phone Number</Form.Label>
             <Form.Control name="phone" type="Number" className="signup-FormGroup" required onChange={this.handleChange.bind(this)} />
           </Form.Group>
         </Form.Row>
         <Form.Row>
-          <Form.Group as={Col} controlId="formGridPassword">
+          <Form.Group as={Col} controlId="formGridPassword" className="signup-FormGroup-con">
             <Form.Label className="signup-label">Password</Form.Label>
             <Form.Control name="password" type="password" className="signup-FormGroup" onChange={this.handleChange.bind(this)} />
           </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridPassword">
+          <Form.Group as={Col} controlId="formGridPassword" className="signup-FormGroup-con">
             <Form.Label className="signup-label">Comfirm Password</Form.Label>
             <Form.Control name="confirmPassword" type="password" className="signup-FormGroup" onChange={this.handleChange.bind(this)} />
           </Form.Group>
