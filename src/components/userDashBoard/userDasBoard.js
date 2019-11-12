@@ -13,7 +13,7 @@ class userDashboard extends React.Component {
         return (
             <div>
                     <NavBar />
-                <div id='main'>
+                <div id='dashboard-main'>
                 <Sidenav />
                     <div id='Dashboard-card-container'>
                         <div id='userDashboard-card'>

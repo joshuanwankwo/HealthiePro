@@ -14,7 +14,7 @@ class HomePageNav extends React.Component {
     render() {
         return (
             <nav id="home-nav-con">
-                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230060/healthie/Healthie-Logo_l7pp9u.svg')} />
+                {/* <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230060/healthie/Healthie-Logo_l7pp9u.svg')} /> */}
                 <ul id="home-nav-items">
                     <li><i class="fas fa-bell"></i></li>
                     <li> <i class="fas fa-user-circle"></i></li>

@@ -10,8 +10,7 @@ import Symptoms from '../src/components/symptom/symptom';
 import SelectSearchedDoctor from '../src/components/selectSearchDoctors/select-Search-Doctor';
 import userDashboard from '../src/components/userDashBoard/userDasBoard';
 import DoctorProfile from '../src/components/DoctorsProfile/DoctorsProfile';
-import CongratsModal from '../src/components/congratsModal/congratsModal'
-import BookaDoc from '../src/components/BookaDoc/BookaDoc'
+import CongratsModal from '../src/components/congratsModal/congratsModal';
 import UserSetting from './components/userProfileSetting/userProfileSetting';
 
 class App extends React.Component{
