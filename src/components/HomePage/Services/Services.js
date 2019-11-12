@@ -8,11 +8,7 @@ function Services(props) {
     return (
         <section id="home-service-con">
             <div id="service-background-con">
-<<<<<<< HEAD
-                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230037/healthie/testo_sy1sd3.svg')} />
-=======
                 <img id="testo" src="./testo.png" />
->>>>>>> 217e3b8130f5c2556de7843898f00fbf744eb16a
             </div>
             <div id="home-service">
             
