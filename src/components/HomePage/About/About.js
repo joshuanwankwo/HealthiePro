@@ -8,7 +8,8 @@ function About(props) {
     return (
         <div id="about-con">
             <section id="about">
-                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230048/healthie/aboutus_c0jw8z.svg')} />
+                <img src="./aboutus.png" />
+                {/* <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230048/healthie/aboutus_c0jw8z.svg')} /> */}
                 <div id="about-details">
                     <p id="about-title">About Us</p>
                     <p id="about-title-1"> Professional Health<br></br> Care in Full Measure</p>

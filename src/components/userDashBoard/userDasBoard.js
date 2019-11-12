@@ -4,7 +4,7 @@ import NavBar from '../NavBar/NavBar';
 import Sidenav from '../sideNav/sideNav';
 
 
-class userDashboard extends Component {
+class userDashboard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -12,10 +12,10 @@ class userDashboard extends Component {
     render() {
         return (
             <div>
-                <NavBar />
-                <div id='main'>
+                    <NavBar />
+                <div id='dashboard-main'>
                 <Sidenav />
-                    <div id='userDashboard-card-container'>
+                    <div id='Dashboard-card-container'>
                         <div id='userDashboard-card'>
                             <div id='time'>
                                 <h5 id='day'>4 Days</h5>
