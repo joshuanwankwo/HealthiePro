@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './BookDoc.css';
 import CongratsModal from '../congratsModal/congratsModal';
 import NavBar from '../NavBar/NavBar'
-
+import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
 import cloudinary from 'cloudinary-core';
 const cloudinaryCore = new cloudinary.Cloudinary({ cloud_name: 'healthie' });
 

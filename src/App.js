@@ -1,19 +1,18 @@
 import React from 'react';
-import './App.css';
-import LandingPage from '../components/LandingPage/LandingPage';
-import HomePage from '../components/HomePage/HomePage'
-import SignUp from '../components/SignupPage/SignupPage';
-import LoginPage from '../components/LoginPage/LoginPage'
-import BookDoc from '../components/BookDoc/BookDoc'
-import modal from '../components/modal/modal';
+import LandingPage from '../src/components/LandingPage/LandingPage';
+import HomePage from '../src/components/HomePage/HomePage'
+import SignUp from '../src/components/SignupPage/SignupPage';
+import LoginPage from '../src/components/LoginPage/LoginPage'
+import BookDoc from '../src/components/BookDoc/BookDoc'
+import modal from '../src/components/modal/modal';
 import {Switch,Route, BrowserRouter} from "react-router-dom";
-import Symptoms from '../components/symptom/symptom';
-import SelectSearchedDoctor from '../components/selectSearchDoctors/select-Search-Doctor';
-import userDashboard from '../components/userDashBoard/userDasBoard';
-import DoctorProfile from '../components/DoctorsProfile/DoctorsProfile';
-import CongratsModal from '../components/congratsModal/congratsModal'
-// import BookaDoc from '../components/BookaDoc/BookaDoc'
-
+import Symptoms from '../src/components/symptom/symptom';
+import SelectSearchedDoctor from '../src/components/selectSearchDoctors/select-Search-Doctor';
+import userDashboard from '../src/components/userDashBoard/userDasBoard';
+import DoctorProfile from '../src/components/DoctorsProfile/DoctorsProfile';
+import CongratsModal from '../src/components/congratsModal/congratsModal';
+import UserSetting from './components/userProfileSetting/userProfileSetting';
+import RelatedDoctors from './components/relatedDoctors/relatedDoctors'
 
 class App extends React.Component{
     render(){
@@ -35,7 +34,7 @@ class App extends React.Component{
                     <Route path="/bookdoctor" component={BookDoc} />
                     <Route path="/setting" component={UserSetting} />
                     <Route path="/congrats" component={CongratsModal} />
-                    {/* <Route path="/bookadoc" component={BookaDoc} /> */}
+                    <Route path="/relatedoc" component={RelatedDoctors} /> 
                 </Switch>
             </BrowserRouter>
 

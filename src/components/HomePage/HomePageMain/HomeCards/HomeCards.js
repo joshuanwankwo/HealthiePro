@@ -13,14 +13,16 @@ class HomeCard extends Component {
             display: false
         }
     }
-
+   handleClick(){
+       this.props.history.push('./selectSearchDoctor')
+   }
     render() {
         return (
 
             <div>
                 <div className="home-cards-con">
                     
-                        <div className="home-card">
+                        <div className="home-card" onClick={this.handleClick.bind(this)}>
                             <p>Meet a Doctor</p>
                             <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230043/healthie/doctor1_gevksn.svg')} />
                         </div>
