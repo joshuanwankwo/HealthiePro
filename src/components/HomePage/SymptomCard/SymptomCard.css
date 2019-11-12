@@ -1,13 +1,12 @@
 #home-symptom-card-wrapper {
     display: grid;
     justify-items: center;
-    margin-top: 5%;
+    margin-top:5%;
 }
 
 #home-symptom-card-con {
     display: flex;
     width: 87%;
-    height: 282px;
     justify-items: center;
     background: #fff;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);

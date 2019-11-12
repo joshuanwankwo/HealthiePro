@@ -22,28 +22,40 @@ body{
     flex-wrap: wrap;
 }
 
+.parent-text-btn{
+    display: flex;
+    /* border: 1px solid green; */
+    width: 100vw;
+
+}
+
 .h1-tag{
     position: absolute;
     margin-top: 220px;
-    margin-left: 40px;
+    margin-left: 60px;
     width: 594px;
     height: 154px;
-    font-family: noto-serif;
-    font-size: 4rem;
     color: #4290C9;
-    z-index: 1;
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 119.7%;
 }
 
 .p-tag{
     position: absolute;
     margin-top: 420px;
-    margin-left: 40px;
+    margin-left: 60px;
     width: 446px;
     height: 58px;
-    font-size: 1rem;
     color: #4290C9;;
-    font-family: Noto Sans;
     word-wrap: wrap;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180.4%;
 }
 
 
@@ -64,7 +76,7 @@ body{
 
 .doctors-img{
     position: relative;
-    right: -34.75%;
+    right: -16%;
     top: -1.9%;
    
 }

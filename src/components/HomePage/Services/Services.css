@@ -8,17 +8,18 @@
 }
 #home-service{
     display:flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top:86px; */
     
-    padding-top:86px;
-
 }
 #home-test-doc{
-   height:498px;
-   width:394px;
-   margin-left:50px;
+    height:498px;
+    width:394px;
+    margin-left:50px;
 }
 #home-service-con-text{
-    width:50%;
+    width:40%;
     margin-left:5%
 }
 #home-service p{
@@ -26,23 +27,30 @@
 }
 #home-service-title{
     color:#4290C9;
-    font-family: Noto Serif;
+    line-height: 154.4%;
+    font-family: 'Noto Serif';
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 154.4%;
 }
 #home-service-header{
-    font-family: Noto Serif;
+    font-family: 'Noto Serif';
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 154.4%;
+    
 }
 #home-service-text{
-    font-family: Noto Sans;
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 154.4%;
+}
+
+#testo{
+    margin-top: -320px;
+    margin-left: 70px;
 }
