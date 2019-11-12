@@ -4,7 +4,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: left top;
-    background: linear-gradient(180deg, rgba(68, 199, 191, 0.2) 0%, #4e9ed8 100%), url("../../assets/image8.png");
+    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%,#35444E 100%), url("https://res.cloudinary.com/healthie/image/upload/v1573230083/healthie/image8_ne6y1k.png");
     opacity: 0.7;
 }
 

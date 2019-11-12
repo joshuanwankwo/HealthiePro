@@ -34,6 +34,7 @@ class App extends React.Component{
                     <Route path="/bookdoctor" component={BookDoc} />
                     <Route path="/setting" component={UserSetting} />
                     <Route path="/congrats" component={CongratsModal} />
+                    {/* <Route path="/bookadoc" component={BookaDoc} /> */}
                 </Switch>
             </BrowserRouter>
 

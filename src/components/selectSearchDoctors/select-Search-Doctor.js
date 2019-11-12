@@ -3,6 +3,10 @@ import './select-Search-Doctor.css';
 import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
 import NavBar from '../NavBar/NavBar';
 
+import cloudinary from 'cloudinary-core';
+const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
+
+
 class SelectSearchedDoctor extends Component {
     constructor(props) {
         super(props);
@@ -11,6 +15,7 @@ class SelectSearchedDoctor extends Component {
         }
     }
     componentDidMount(){
+        // console.log('this.props', this.props)
         fetch("https://healthieapp.herokuapp.com/api/doctors")
         .then(function (response) {
             return response.json();
@@ -20,19 +25,25 @@ class SelectSearchedDoctor extends Component {
             })
              })
         setTimeout(()=>console.log(this.state.doctors[0].name), 3000)
+        this.handleClick = this.handleClick.bind(this)
     }
+
+    handleClick(doctor){
+        console.log("clicked")
+        this.props.history.push({pathname:"/doctorprofile", state: doctor})
+    }
+
     render() {
         console.log(this.state.doctors)
          let doctorsResult = this.state.doctors.map((doctor, key)=>{
              return (
+            //map through the doctors on the data base and showcase them on client side
 
-            <Link to ="DoctorProfile">
-
-                 <div id="resultData">
+                 <div id="resultData" onClick={()=>{this.handleClick(doctor)}}>
 
             
 
-                <img src="./DrDebby.png" />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230051/healthie/DrDebby_snh9xq.png')} />
                 <div id="details">
                 <h1 id='name'>{doctor.name}</h1>
                 <h2 id='specilaty'>{doctor.specialty}</h2>
@@ -42,11 +53,11 @@ class SelectSearchedDoctor extends Component {
                 
 
                 <div id="star">
-                <img src="./Star.svg" />
-                <img src="./Star.svg" />
-                <img src="./Star.svg" />
-                <img src="./Star.svg" />
-                <img src="./Star.svg" />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230036/healthie/Star_a0tuuj.svg')} />
                 </div>
 
                  <a href="#">Book Appointment  ></a> 
@@ -54,7 +65,6 @@ class SelectSearchedDoctor extends Component {
                 </div>
 
             </div>
-            </Link>
              )
              
         })
@@ -63,7 +73,7 @@ class SelectSearchedDoctor extends Component {
                     <NavBar />
                 <div id="relatedSearch">
                     <div id="searchBox">
-                    <input type="search" placeholder="ifedili"/>
+                    <input type="search" placeholder="Search..."/>
                     <i class="fas fa-search"></i>
                     </div>
 
