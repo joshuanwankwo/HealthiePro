@@ -55,13 +55,6 @@ function LandingPage(props) {
         <img className="doctors-img" src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230072/healthie/Img_kwifbg.png')}/>
         </div>
 
-        
-        <div>
-            <Button bg={'#4290C9'} buttonName={`Book Appointment`} width={`290px`} height={`59px`} marginTop={`550px`} marginLeft={`60px`} padding={`20px`} /> 
-        </div>
-
-        <img className="doctors-img" src="./Img.png" width='' height='' />    
-
         <About />
         <Services />
         <Solutions />
