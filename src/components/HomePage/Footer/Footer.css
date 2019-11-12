@@ -1,11 +1,12 @@
 #home-footer-con-wrapper {
     display: grid;
-    width:100%;
-    background: #35444E;
+    width: 100%;
     padding: 70px 0px 60px 0px;
 }
 
 .home-footer-text-con {
+    padding-top: 5%;
+    border-top: 2px solid #DEDEDE;
     display: flex;
     width: 87%;
     justify-self: center;
@@ -22,26 +23,26 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 119.7%;
-    color: #fff;
+    color: #35444E;
 }
 
 .home-footer-texts {
-    font-family: 'Noto Serif';
+    font-family: Noto Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 15.5px;
     line-height: 154.4%;
-    color: #fff;
+    color: #35444E;
     width: max-content;
-
 }
-#home-recent-blog{
+
+#home-recent-blog {
     font-family: 'Noto Serif';
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 119.7%;
-    color: #fff;
+    color: #35444E;
 }
 
 #footer-contact {
@@ -50,15 +51,14 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 119.7%;
-    color: #fff;
+    color: #35444E;
 }
 
-#follow{
+#follow {
     font-family: Noto Serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 119.7%;
-color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 119.7%;
+    color: #35444E;
 }
-

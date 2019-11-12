@@ -2,16 +2,18 @@ import React from 'react';
 import './NavBar.css';
 import { NavLink } from 'react-router-dom';
 
+import cloudinary from 'cloudinary-core';
+const cloudinaryCore = new cloudinary.Cloudinary({ cloud_name: 'demo' });
 
 const NavBar = (props) => {
     return (
         <nav id="navbar-con">
-            <img id="navbar-con-img" src="./logo1.svg" />
-             <ul id="navbar-con-ul">
+            <img id="navbar-con-img" src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230074/healthie/logo_zitoka.svg')} />
+            <ul id="navbar-con-ul">
                 <li id="navbar-con-ul-li"> <i class="fas fa-bell"></i></li>
                 <li id="navbar-con-ul-li"> <i class="fas fa-user-circle"></i></li>
                 <li id="navbar-con-ul-li"><button id="navbar-con-ul-li-btn">Appointment</button></li>
-            </ul> 
+            </ul>
         </nav>
 
     )
