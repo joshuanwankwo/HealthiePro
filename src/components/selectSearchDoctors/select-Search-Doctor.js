@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './select-Search-Doctor.css';
-
+import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
+import NavBar from '../NavBar/NavBar';
 
 import cloudinary from 'cloudinary-core';
 const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
 
-import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
-import NavBar from '../NavBar/NavBar';
 
 class SelectSearchedDoctor extends Component {
     constructor(props) {
