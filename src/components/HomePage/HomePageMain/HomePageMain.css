@@ -1,4 +1,5 @@
 #homeMain-con{
+    width: 100vw;
     height:100vh;
     background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%,#35444E 100%), url("https://res.cloudinary.com/healthie/image/upload/v1573230081/healthie/homebackground_arwkke.svg");
     background-position: center;
