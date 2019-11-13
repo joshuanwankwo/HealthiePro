@@ -4,7 +4,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
-    "build": "webpack --mode production",
+    "build": "rm -rf dist/*  && webpack --mode development --progress --colors",
     "homepage": "https://peteryar.github.io/reactRenderConditionallyPractice/",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
@@ -24,6 +24,7 @@
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
@@ -33,12 +34,12 @@
     "bootstrap": "^4.3.1",
     "cloudinary-react": "^1.2.1",
     "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "netlify-cli": "^2.20.2",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-image": "^2.2.0",
     "react-router-dom": "^5.1.2",
-    "react-svg": "^10.0.19",
-    "url-loader": "^2.1.0"
+    "react-svg": "^10.0.19"
   },
   "repository": {
     "type": "git",

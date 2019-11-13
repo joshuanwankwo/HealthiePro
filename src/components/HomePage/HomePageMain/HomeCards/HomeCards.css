@@ -1,5 +1,7 @@
 .home-cards-con{
-    text-align: center;
+    width:100vw;
+    display: flex;
+    justify-content: center;
 
 }
 .home-card{
