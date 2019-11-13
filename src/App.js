@@ -29,7 +29,7 @@ class App extends React.Component{
                     <Route path="/modal" component={modal} />
                     <Route path="/bookdoc" component={BookDoc} />
                     <Route path="/doctorprofile" component={DoctorProfile} />
-                    <Route path="/selectSearchedDoctors" component={SelectSearchedDoctor} />
+                    <Route path="/selectsearcheddoctors" component={SelectSearchedDoctor} />
                     <Route path="/dashboard" component={userDashboard} />
                     <Route path="/bookdoctor" component={BookDoc} />
                     <Route path="/setting" component={UserSetting} />

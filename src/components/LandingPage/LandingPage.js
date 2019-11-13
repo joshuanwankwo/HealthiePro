@@ -39,7 +39,7 @@ function LandingPage(props) {
         <div className="parent-text-btn">
 
             <h1 className="h1-tag">
-                We are comitted to your health
+                We are committed to your health
         </h1>
 
             <p className="p-tag">

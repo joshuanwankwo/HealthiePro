@@ -18,7 +18,7 @@ class HomePageMain extends React.Component {
                     <p>Every day we bring hope </p>
                     <p>and smile to Patient we serve</p>
                 </section>
-                 <HomeCards />
+                 <HomeCards history={this.props.history}/>
             </div>
         )
     }

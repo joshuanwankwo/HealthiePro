@@ -13,11 +13,11 @@ const footerStyles = {
       color: '#35444E',
   }
 }
-    function HomePage(){
+    function HomePage(props){
     return (
      
       <div id="home-con">
-         <HomePageMain />
+         <HomePageMain history={props.history}/>
           <SymptomCard />
           <Footer styles={footerStyles}/>  
       </div>
