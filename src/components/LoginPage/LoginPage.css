@@ -125,7 +125,13 @@ body {
     width: 100%;
     height: 50px;
 }
-
+.login-Email-form-control::placeholder{
+    
+    padding-left:10%;
+}
+.login-password-form-control::placeholder{
+     padding-left:10%;
+}
 .login-password-form-control {
     background-image: url('https://res.cloudinary.com/healthie/image/upload/v1573230073/healthie/lock_xtyyas.png');
     background-position: 10px 11px;

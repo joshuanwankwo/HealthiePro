@@ -22,6 +22,11 @@ class LoginPage extends React.Component {
         }
     }
     handleChange(event) {
+        this.setState({
+            errorMessage: {
+                display: 'none'
+            }
+        })
         const { name, value } = event.target;
         switch (name) {
             case "email":
@@ -83,12 +88,12 @@ class LoginPage extends React.Component {
                     </div>
                     <Form.Group className="login-input-container" controlId="formGroupEmail">
                         <Form.Label className="login-form-label">Email address</Form.Label>
-                        <Form.Control name="email" required className="login-Email-form-control" type="email" onChange={this.handleChange.bind(this)} />
+                        <Form.Control name="email" required className="login-Email-form-control" type="email" placeHolder='Email' onChange={this.handleChange.bind(this)} />
                     </Form.Group>
 
                     <Form.Group className="login-input-container" controlId="formGroupPassword">
                         <Form.Label className="login-form-label">Password</Form.Label>
-                        <Form.Control name="password" required className="login-password-form-control" type="password" onChange={this.handleChange.bind(this)} />
+                        <Form.Control name="password"  required className="login-password-form-control" type="password" placeholder='Password' onChange={this.handleChange.bind(this)} />
                     </Form.Group>
 
                     <button className="Login-Button btn1" >{this.state.loading ? <Spinner animation="border" variant="primary" /> : "Login"}</button>

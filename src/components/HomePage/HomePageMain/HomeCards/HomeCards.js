@@ -14,7 +14,7 @@ class HomeCard extends Component {
         }
     }
    handleClick(){
-       this.props.history.push('./selectSearchDoctor')
+       this.props.history.push('/selectsearcheddoctors')
    }
     render() {
         return (
