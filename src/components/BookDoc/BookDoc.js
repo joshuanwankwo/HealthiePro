@@ -26,9 +26,6 @@ class BookDoc extends Component {
 
    render() {
       return (
-
-
-
          <div id="bookDoc-con">
             <NavBar />
             {this.state.display === true && <div onClick={this.handleModal} style={{
@@ -68,20 +65,12 @@ class BookDoc extends Component {
 
                   <div id="bookDoc-input-schedule-con">
                      <div id="bookDoc-input-date">
-                        <input placeholder="27 September 2019" />
+                        <input  placeholder="27 September 2019" />
                         <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230040/healthie/calender_bshzcy.svg')} />
                      </div>
                      <div id="bookDoc-input-time">
-                        <input placeholder="Select Time" />
+                        <input placeholder="Select Time" type="calender"/>
                         <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230055/healthie/dropdown_llk5ae.svg')} />
-                     </div>
-                  </div>
-
-                  <div id="bookDoc-input-visit-ques">
-                     <input placeholder="Have Have You Visited This Hospital Before?" />
-                     <div>
-                        <button id="bookDoc-input-button1">Yes</button>
-                        <button id="bookDoc-input-button2">No</button>
                      </div>
                   </div>
 
@@ -102,25 +91,12 @@ class BookDoc extends Component {
                   <div id="bookDoc-input-email">
                      <input placeholder="Email Address" />
                   </div>
-
-
-                  <div id="bookDoc-input-schedule-con">
-                     <div id="bookDoc-input-date">
-                        <input placeholder="Select Your Age" />
-                     </div>
-                     <div id="bookDoc-input-time">
-                        <input placeholder="Gender" />
-                        <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230055/healthie/dropdown_llk5ae.svg')} />
-                     </div>
-                  </div>
-
-
-
                   <button onClick={this.handleModal} id="bookDoc-form-Submit">Submit</button>
 
 
                </form>
             </div>
+
          </div>
 
 
