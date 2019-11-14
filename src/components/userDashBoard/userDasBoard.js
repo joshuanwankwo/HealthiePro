@@ -3,6 +3,9 @@ import './userDashBoard.css';
 import NavBar from '../NavBar/NavBar';
 import Sidenav from '../sideNav/sideNav';
 
+import cloudinary from 'cloudinary-core';
+const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
+
 
 class userDashboard extends React.Component {
     constructor(props) {
@@ -21,8 +24,8 @@ class userDashboard extends React.Component {
                                 <h5 id='day'>4 Days</h5>
                                 <h5 id='hour'>21 Hours</h5>
                             </div>
-                            <div id='dashdetails'>
-                                <img id='icon' src='./icon.png' />
+                            <div id='details'>
+                                <img id='icon' src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230066/healthie/icon_vm64nm.png')} />
                                 <aside id='texts'>
                                     <h5 id='name'>Dr. Ifedili Joshua</h5>
                                     <h5 id='specialty'>Pediatric Sugery</h5>
@@ -40,8 +43,8 @@ class userDashboard extends React.Component {
                             <div id='time'>
                                 <i class="fas fa-check-circle"></i>
                             </div>
-                            <div id='dashdetails'>
-                                <img id='icon' src='./icon.png' />
+                            <div id='details'>
+                                <img id='icon' src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230066/healthie/icon_vm64nm.png')} />
                                 <aside id='texts'>
                                     <h5 id='name'>Dr. Ifedili Joshua</h5>
                                     <h5 id='specialty'>Pediatric Sugery</h5>
@@ -58,8 +61,8 @@ class userDashboard extends React.Component {
                             <div id='time'>
                                 <i class="fas fa-check-circle"></i>
                             </div>
-                            <div id='dashdetails'>
-                                <img id='icon' src='./icon.png' />
+                            <div id='details'>
+                                <img id='icon' src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230066/healthie/icon_vm64nm.png')} />
                                 <aside id='texts'>
                                     <h5 id='name'>Dr. Ifedili Joshua</h5>
                                     <h5 id='specialty'>Pediatric Sugery</h5>
@@ -77,8 +80,8 @@ class userDashboard extends React.Component {
                                 <h5 id='day'>4 Days</h5>
                                 <h5 id='hour'>21 Hours</h5>
                             </div>
-                            <div id='dashdetails'>
-                                <img id='icon' src='./icon.png' />
+                            <div id='details'>
+                                <img id='icon'src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230066/healthie/icon_vm64nm.png')} />
                                 <aside id='texts'>
                                     <h5 id='name'>Dr. Ifedili Joshua</h5>
                                     <h5 id='specialty'>Pediatric Sugery</h5>
@@ -96,8 +99,8 @@ class userDashboard extends React.Component {
                             <div id='time'>
                                 <i class="fas fa-check-circle"></i>
                             </div>
-                            <div id='dashdetails'>
-                                <img id='icon' src='./icon.png' />
+                            <div id='details'>
+                                <img id='icon' src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230066/healthie/icon_vm64nm.png')}/>
                                 <aside id='texts'>
                                     <h5 id='name'>Dr. Ifedili Joshua</h5>
                                     <h5 id='specialty'>Pediatric Sugery</h5>
@@ -114,8 +117,8 @@ class userDashboard extends React.Component {
                             <div id='time'>
                                 <i class="fas fa-check-circle"></i>
                             </div>
-                            <div id='dashdetails'>
-                                <img id='icon' src='./icon.png' />
+                            <div id='details'>
+                                <img id='icon' src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230066/healthie/icon_vm64nm.png')} />
                                 <aside id='texts'>
                                     <h5 id='name'>Dr. Ifedili Joshua</h5>
                                     <h5 id='specialty'>Pediatric Sugery</h5>
@@ -132,8 +135,8 @@ class userDashboard extends React.Component {
                             <div id='time'>
                                 <i class="fas fa-check-circle"></i>
                             </div>
-                            <div id='dashdetails'>
-                                <img id='icon' src='./icon.png' />
+                            <div id='details'>
+                                <img id='icon' src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230066/healthie/icon_vm64nm.png')} />
                                 <aside id='texts'>
                                     <h5 id='name'>Dr. Ifedili Joshua</h5>
                                     <h5 id='specialty'>Pediatric Sugery</h5>
@@ -151,8 +154,8 @@ class userDashboard extends React.Component {
                                 <h5 id='day'>4 Days</h5>
                                 <h5 id='hour'>21 Hours</h5>
                             </div>
-                            <div id='dashdetails'>
-                                <img id='icon' src='./icon.png' />
+                            <div id='details'>
+                                <img id='icon' src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230066/healthie/icon_vm64nm.png')} />
                                 <aside id='texts'>
                                     <h5 id='name'>Dr. Ifedili Joshua</h5>
                                     <h5 id='specialty'>Pediatric Sugery</h5>

@@ -77,13 +77,13 @@ color: #35444E;
 #bookDoc-input-hospital input {
     float: left;
     border: none;
-    margin: 5%;
-    width: 80%;
+    width: 100%;
     outline: none;
 }
 
 #bookDoc-input-hospital img {
     float: right;
+    padding-right: 15px;
 }
 
 #bookDoc-input-schedule-con {
@@ -109,7 +109,7 @@ color: #35444E;
 }
 
 #bookDoc-input-time {
-    margin-left: 15px;
+   
 }
 
 #bookDoc-input-date img {
@@ -124,7 +124,6 @@ color: #35444E;
     border: none;
     outline: none;
     width: 80%;
-    margin-left: 20px;
 }
 
 #bookDoc-input-time input {
@@ -141,6 +140,7 @@ color: #35444E;
     font-size: 16px;
     line-height: 154.4%;
     color: #35444E;
+    padding-left:15px;
 }
 
 #bookDoc-input-visit-ques {
