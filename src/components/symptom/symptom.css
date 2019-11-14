@@ -33,8 +33,8 @@
     margin-top:20px;
 }
 .symptom-card-con-1{
-    width:100px;
-    height:100px;
+    width:150px;
+    height:150px;
     background:url('https://res.cloudinary.com/healthie/image/upload/v1573230048/healthie/backbone_ryva97.svg') no-repeat;
     background-size: cover;
     border-radius:4px;
