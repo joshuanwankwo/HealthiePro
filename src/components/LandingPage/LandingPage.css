@@ -67,7 +67,9 @@ body{
 
 
 .doctors-img{
-    padding-top: px;
+    position: relative;
+    right: -16%;
+   
 }
 
 .arrow {

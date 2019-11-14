@@ -27,7 +27,7 @@
 }
 
 .home-footer-texts {
-    font-family: Noto Sans;
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 15.5px;
@@ -54,11 +54,11 @@
     color: #35444E;
 }
 
-#follow {
-    font-family: Noto Serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 119.7%;
-    color: #35444E;
+#follow{
+    font-family: 'Noto Serif';
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 119.7%;
+color: #fff;
 }
