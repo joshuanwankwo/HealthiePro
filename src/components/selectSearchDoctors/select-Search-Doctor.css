@@ -86,6 +86,8 @@
     align-items: center;
     flex-direction: column;
     overflow-y: scroll;
+    
+
 }
 
 #relatedSearch > #searchBox{
@@ -111,6 +113,7 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right-color: transparent;
+    
 }
 
 
@@ -130,13 +133,12 @@
 }
 
 #relatedSearch > #result-container {
-    /* position: relative; */
-    width: max-content;
-    /* border: 1px solid black; */
+    width: 80%;
     height: max-content;
     padding: 10px;
-    /* display: flex; */
-    
+    border: 2px solid green
+
+
 }
 
 #relatedSearch > #result-container > h1{
@@ -150,14 +152,17 @@
 #resultData{
     height: min-content;
     width: max-content;
-    /* border: 1px solid blue; */
     display: flex;
     padding: 10px;
+
     
 }
 
+#resultData > #ppics{
+    height: inherit;
+}
+
 #details{
-    /* border: 1px solid blue; */
     height: max-content;
     width: max-content;
     padding: 10px;
