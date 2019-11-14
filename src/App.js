@@ -12,6 +12,7 @@ import userDashboard from '../src/components/userDashBoard/userDasBoard';
 import DoctorProfile from '../src/components/DoctorsProfile/DoctorsProfile';
 import CongratsModal from '../src/components/congratsModal/congratsModal';
 import UserSetting from './components/userProfileSetting/userProfileSetting';
+import Notifications from './components/notifications/noifications';
 
 class App extends React.Component{
     render(){
@@ -34,6 +35,7 @@ class App extends React.Component{
                     <Route path="/setting" component={UserSetting} />
                     <Route path="/congrats" component={CongratsModal} />
                     {/* <Route path="/bookadoc" component={BookaDoc} /> */}
+                    <Route path="/notifications" component={Notifications} />
                 </Switch>
             </BrowserRouter>
 
