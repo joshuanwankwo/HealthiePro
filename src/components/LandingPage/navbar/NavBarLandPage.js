@@ -32,8 +32,6 @@ class NavBarLandPage extends React.Component{
 
                     <div className="navitems"> {Navitems} </div>
 
-                        {/* <div className="spacer"></div> */}
-
 
                     <div className="Navbtn-group">
                     <Link to="/login"> <button className="nav-btn nav-btn1">Login</button> </Link>

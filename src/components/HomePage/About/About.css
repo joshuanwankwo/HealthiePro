@@ -1,8 +1,10 @@
 #about-con{
-    margin:5%;
-    margin-top: -8%;
+    /* margin:5%;
+    margin-top: -8%; */
+    width: 100%;
 
 }
+
 #about{
     display:flex;
     justify-content: center;
