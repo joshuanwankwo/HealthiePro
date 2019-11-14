@@ -1,13 +1,16 @@
 import React from 'react';
 import './NavBarLandPage.css'
-import {BrowserRouter as Router, Link, Switch, Route } from "react-router-dom"
+import {BrowserRouter as Router, Link, } from "react-router-dom";
+
+import cloudinary from 'cloudinary-core';
+const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
 
 class NavBarLandPage extends React.Component{
     constructor(props) {
         super(props);
         
     this.state = {
-      Navlinks: [{link: "Home", id:1}, {link: "About", id:2}, {link: "Services", id:3}, {link: "Blog", id:4}]
+      Navlinks: [{link: "Home", id:1}, {link: "About", id:2}, {link: "Services", id:3}]
     };
 
 }
@@ -23,13 +26,13 @@ class NavBarLandPage extends React.Component{
         return (
             <div className="landing-Navbody" >
 
-                   <div className="Logo"> <img src="./Healthie-Logo.png" /> </div> 
+                   <div className="Logo"> <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230076/healthie/logo1_iesguq.svg')} /> </div> 
 
                         <div className="spacer"></div>
 
                     <div className="navitems"> {Navitems} </div>
 
-                        <div className="spacer"></div>
+                        {/* <div className="spacer"></div> */}
 
 
                     <div className="Navbtn-group">

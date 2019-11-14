@@ -1,0 +1,37 @@
+#home-nav-con {
+    display: grid;
+    grid-template: 1fr/30% 70%;
+    width: 100%;
+}
+
+#home-nav-con ul {
+    justify-self: end;
+    margin: 20px;
+}
+
+#home-nav-con i {
+    color: #fff;
+    cursor: pointer;
+}
+
+#home-nav-con li {
+    display: inline;
+}
+
+#home-nav-con img {
+    margin: 20px;
+    cursor: pointer;
+}
+
+#home-nav-con button {
+    background-color: #4290C9;
+    border: 0px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 10px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}

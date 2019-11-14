@@ -1,0 +1,63 @@
+#home-footer-con-wrapper {
+    display: grid;
+    width:100%;
+    background: #35444E;
+    padding: 70px 0px 60px 0px;
+}
+
+.home-footer-text-con {
+    display: flex;
+    width: 87%;
+    justify-self: center;
+    justify-items: stretch;
+}
+
+.home-footer-text-con div {
+    width: 33.33%;
+}
+
+#home-footer-about {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 119.7%;
+    color: #fff;
+}
+
+.home-footer-texts {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 154.4%;
+    color: #fff;
+    width: max-content;
+
+}
+#home-recent-blog{
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 119.7%;
+    color: #fff;
+}
+
+#footer-contact {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 119.7%;
+    color: #fff;
+}
+
+#follow{
+    font-family: 'Noto Serif';
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 119.7%;
+color: #fff;
+}

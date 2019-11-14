@@ -1,12 +1,16 @@
 import React from 'react';
-import './Symptom.css';
 import NavBar from '../NavBar/NavBar';
+import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
+import './symptom.css';
 
 
-function Symptoms(props) {
+function Symptoms() {
+    const handleClick = ()=>{
+
+    }
     return (
         <div id="symptoms-con">
-            <NavBar />
+            <NavBar/>
             <div id="symptoms-intro-con">
                 <div id="symptoms-intro">
                     <p>
@@ -22,9 +26,11 @@ function Symptoms(props) {
 
                     <div>
                         <div className="symptom-card-con-1">
+                            {/* <img src="./selectedMark.svg"/> */}
                             <p>Sore Throat</p>
                         </div>
                         <div className="symptom-card-con-1">
+                            {/* <img src="./selectedMark.svg"/> */}
                             <p>Sore Throat</p>
                         </div>
                         <div className="symptom-card-con-1">
@@ -94,7 +100,11 @@ function Symptoms(props) {
                     
 
                     <div id="symptoms-submit">
-                        <button>Submit</button>  
+
+                        <Link to ="/selectSearchedDoctors">
+                            <button>Submit</button> 
+                        </Link> 
+
                     </div>
                 </div>
 

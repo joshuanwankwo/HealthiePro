@@ -4,7 +4,7 @@
     width: 20vw;
     background-color: #35444E;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
 }
@@ -43,19 +43,20 @@
     color: white;
 }
 
-#main{
+#dashboard-main{
     display: flex;
 }
 
-#userDashboard-card-container{
+#Dashboard-card-container{
     /* border: 1px solid black; */
     height: calc(100vh - 80px);
-    width: calc(100vw - 20vw);
+    /* width: calc(100vw - 20vw); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     overflow-y: scroll;
     background-color: #f8f8f8f8;
+    overflow-x: hidden;
 }
 
 #userDashboard-card{
@@ -97,16 +98,20 @@
     color: #35444E;
 }
 
-#details{
+#dashdetails{
     height: 100%;
     width: 70%;
     display: flex;
+    flex-direction: inherit;
+    padding: 20px;
+
 
 }
 
 #icon{
     height: fit-content;
     margin: 10px;
+    width: fit-content;
 }
 
 #name{
