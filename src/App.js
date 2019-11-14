@@ -13,6 +13,7 @@ import DoctorProfile from '../src/components/DoctorsProfile/DoctorsProfile';
 import CongratsModal from '../src/components/congratsModal/congratsModal';
 import UserSetting from './components/userProfileSetting/userProfileSetting';
 import Notifications from './components/notifications/noifications';
+import RelatedDoctors from './components/relatedDoctors/relatedDoctors'
 
 class App extends React.Component{
     render(){
@@ -29,13 +30,14 @@ class App extends React.Component{
                     <Route path="/modal" component={modal} />
                     <Route path="/bookdoc" component={BookDoc} />
                     <Route path="/doctorprofile" component={DoctorProfile} />
-                    <Route path="/selectSearchedDoctors" component={SelectSearchedDoctor} />
+                    <Route path="/selectsearcheddoctors" component={SelectSearchedDoctor} />
                     <Route path="/dashboard" component={userDashboard} />
                     <Route path="/bookdoctor" component={BookDoc} />
                     <Route path="/setting" component={UserSetting} />
                     <Route path="/congrats" component={CongratsModal} />
                     {/* <Route path="/bookadoc" component={BookaDoc} /> */}
                     <Route path="/notifications" component={Notifications} />
+                    <Route path="/relatedoc" component={RelatedDoctors} /> 
                 </Switch>
             </BrowserRouter>
 

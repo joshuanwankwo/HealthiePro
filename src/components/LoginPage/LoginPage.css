@@ -37,7 +37,7 @@ body {
 
 .login-form-body {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr/100%;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/100%;
     justify-items: center;
     background-color: white;
     width: 31%;
@@ -59,10 +59,30 @@ body {
     text-align: center;
 }
 
+.error-message {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 50px;
+    background: #FEFEFE;
+    border: 1px solid #B4BEC6;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: red;
+}
+
+.error-message>p {
+    margin: 5px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 .login-P>p {
     margin: 0 !important;
 }
-
 
 .btn1 {
     background: #4290C9;
@@ -105,7 +125,13 @@ body {
     width: 100%;
     height: 50px;
 }
-
+.login-Email-form-control::placeholder{
+    
+    padding-left:10%;
+}
+.login-password-form-control::placeholder{
+     padding-left:10%;
+}
 .login-password-form-control {
     background-image: url('https://res.cloudinary.com/healthie/image/upload/v1573230073/healthie/lock_xtyyas.png');
     background-position: 10px 11px;
@@ -128,16 +154,14 @@ body {
     color: #4290C9;
 }
 
-
 @media screen and (max-width: 992px) {
-    .login-form-body{
-        width:40%;
+    .login-form-body {
+        width: 40%;
     }
-  }
+}
 
-  @media screen and (max-width: 600px) {
-    .login-form-body{
-        width:95%;
+@media screen and (max-width: 600px) {
+    .login-form-body {
+        width: 95%;
     }
-  }
- 
+}

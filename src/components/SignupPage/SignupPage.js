@@ -11,6 +11,7 @@ class SignUp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading:false,
      input:{ name: null,
       email: null,
       password: null,
@@ -25,6 +26,9 @@ class SignUp extends React.Component {
 }
 handleSubmit(event){
   event.preventDefault();
+  this.setState({
+    loading:true
+  })
   fetch("https://healthieapp.herokuapp.com/api/users/signup", {
       method: 'post',
       headers: {"Content-Type": "application/json"},
@@ -138,7 +142,7 @@ render() {
         </Form.Group>
 
         <Button className="signUp-btn" type="submit">
-          Sign Up
+          {this.state.loading?'Loading':'Sign Up'}
         </Button>
       </Form>
 

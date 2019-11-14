@@ -14,13 +14,15 @@ class NavBarLandPage extends React.Component{
     };
 
 }
+ handleClick(event){
     
+ }   
 
 
     render(){
 
         const Navitems = this.state.Navlinks.map((item)=>(
-            <div key={item.id}>{item.link}</div>
+            <div  onClick={this.handleClick.bind(this)} key={item.id}>{item.link}</div>
       ));
 
         return (
@@ -31,8 +33,6 @@ class NavBarLandPage extends React.Component{
                         <div className="spacer"></div>
 
                     <div className="navitems"> {Navitems} </div>
-
-                        {/* <div className="spacer"></div> */}
 
 
                     <div className="Navbtn-group">

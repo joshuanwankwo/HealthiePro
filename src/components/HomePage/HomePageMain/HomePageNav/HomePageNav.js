@@ -1,7 +1,8 @@
 import React from 'react';
 import "./HomePageNav.css";
+import {Link} from 'react-router-dom'
 import cloudinary from 'cloudinary-core';
-const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
+const cloudinaryCore = new cloudinary.Cloudinary({ cloud_name: 'healthie' });
 
 
 class HomePageNav extends React.Component {
@@ -14,11 +15,11 @@ class HomePageNav extends React.Component {
     render() {
         return (
             <nav id="home-nav-con">
-                {/* <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230060/healthie/Healthie-Logo_l7pp9u.svg')} /> */}
+                <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230074/healthie/logo_zitoka.svg')} />
                 <ul id="home-nav-items">
                     <li><i class="fas fa-bell"></i></li>
-                    <li> <i class="fas fa-user-circle"></i></li>
-                    <li><button>Appointment</button></li>
+                   <Link to="/setting"><li> <i class="fas fa-user-circle"></i></li></Link> 
+                    <Link to="/dashboard"><li><button>Appointment</button></li></Link>
                 </ul>
             </nav>
 
