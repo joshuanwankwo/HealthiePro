@@ -36,6 +36,8 @@ function LandingPage(props) {
 
         <NavBarLandPage />
 
+        <div className="landPage-content">
+
         <div className="parent-text-btn">
 
             <h1 className="h1-tag">
@@ -49,11 +51,17 @@ function LandingPage(props) {
 
 
             <div>
-                <Button bg={'#4290C9'} buttonName={`Book Appointment`} width={`290px`} height={`59px`} marginTop={`550px`} marginLeft={`60px`} padding={`20px`} />
+                <Button bg={'#4290C9'} buttonName={`Book Appointment`} width={`290px`} height={`59px`} marginTop={`500px`} marginLeft={`60px`} padding={`20px`} />
             </div>
-
-        <img className="doctors-img" src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230072/healthie/Img_kwifbg.png')}/>
         </div>
+    
+
+        <div className="langpage-image">
+             <img className="doctors-img" src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230072/healthie/Img_kwifbg.png')} style={{maxHeight: '650px', maxWidth:'450px'}}/>
+        </div>
+
+        </div>
+        
 
         <About />
         <Services />
