@@ -14,6 +14,7 @@ const footerStyles = {
   }
 }
     function HomePage(props){
+      console.log(props.location.userToken)
     return (
      
       <div id="home-con">

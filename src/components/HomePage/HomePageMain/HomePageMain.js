@@ -9,7 +9,6 @@ class HomePageMain extends React.Component {
         super(props);
         this.state = {}
     }
-
     render() {
         return (
             <div id="homeMain-con">

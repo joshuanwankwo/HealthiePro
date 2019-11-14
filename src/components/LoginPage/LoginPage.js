@@ -16,9 +16,9 @@ class LoginPage extends React.Component {
                 display: 'none'
             },
             loading: false,
-            userData: null,
             login: false,
-            message: ''
+            message: '',
+            userId:''
         }
     }
     handleChange(event) {
@@ -53,13 +53,14 @@ class LoginPage extends React.Component {
             return response.json();
         }).then((body) => {
             console.log(body)
-            console.log(body.success)
             if (body.success) {
+                localStorage.setItem("userToken", body.data.token)
+                localStorage.setItem("userId", body.data.user._id)
                 this.setState({
                     login: true,
                 })
                 console.log(`it is ${this.state.login}`)
-                this.props.history.push('/HomePage')
+                this.props.history.push({pathname:"/homepage", userToken:this.state.userToken})
             } else {
                 this.setState({
                     errorMessage: {
@@ -69,9 +70,6 @@ class LoginPage extends React.Component {
                 })
             }
         });
-        if (this.state.login) {
-            this.props.history
-        }
     }
     render() {
         return (
