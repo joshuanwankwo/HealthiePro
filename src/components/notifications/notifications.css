@@ -1,3 +1,10 @@
+#notificationsContainer{
+    display: flex;
+}
+
+
+
+
 #userDashboard-aside{
     /* border: 1px solid black; */
     height: calc(100vh - 80px);
@@ -104,6 +111,7 @@
     display: flex;
     flex-direction: inherit;
     padding: 20px;
+    position: relative;
 
 
 }
@@ -173,4 +181,21 @@
     color: #27AE60;
     font-size: 12px;
     font-style: italic;
+}
+
+#dashdetails > .fa-bell{
+    position: absolute;
+}
+
+#noti{
+    /* height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end; */
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 20px;
+
 }
