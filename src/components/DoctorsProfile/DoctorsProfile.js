@@ -8,9 +8,54 @@ import cloudinary from 'cloudinary-core';
 const cloudinaryCore = new cloudinary.Cloudinary({ cloud_name: 'healthie' });
 
 
-function DoctorProfile(props) {
-    let { name, address, email, phone, specialty, bio } = props.location.state
-    return (
+class DoctorProfile extends React.Component {
+    constructor(props){
+        super(props)
+        console.log('lll => ', this.props)
+        if (this.props && this.props.location.doctor){
+            var data = {
+                name: this.props.location.doctor.name,
+                _id: this.props.location.doctor._id,
+                address: this.props.location.doctor.address,
+                email: this.props.location.doctor.email,
+                phone: this.props.location.doctor.phone
+            }
+            this.saveDetails(data);
+            console.log('saved props')
+        }
+        this.state ={
+            name : this.geStore('name'),
+            docId: this.geStore('doctorId'),
+            address: this.geStore('address'),
+            email: this.geStore('email'),
+            phone: this.geStore('phone')
+        }
+        
+    }
+    componentDidMount(){
+        
+    }
+
+    geStore(key){
+        console.log('fetch')
+        return localStorage.getItem(key);
+    }
+
+    saveDetails(data){
+        localStorage.setItem("name", data.name);
+        localStorage.setItem("doctorId", data._id);
+        localStorage.setItem("address", data.address);
+        localStorage.setItem("email", data.email);
+        localStorage.setItem("phone", data.phone);
+    }
+    handleClick(){
+        console.log('Hello i am about leaving')
+       this.props.history.push({pathname:'/bookdoc', docId:this.state.docId})
+       console.log('new  id',this.state._id)
+    }
+    render(){
+        let { name, address, email, phone, specialty, bio } = this.state
+        return (
         <div className="Doc-profile-parent-div">
             <NavBar />
             <div className="doc-profile-sub-div">
@@ -18,7 +63,6 @@ function DoctorProfile(props) {
                     <img className="Doc-profile-pic" src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230054/healthie/DoctorsProfile_ggywwy.jpg')} />
                 </div>
 
-                {console.log(props.location.state)}
 
                 <div className="Doc-pro-left-side" >
 
@@ -51,11 +95,10 @@ function DoctorProfile(props) {
 
                     <div className="action-btns">
 
-                        <Link to="/bookdoctor">
-                            <div>
+                        
+                            <div onClick={this.handleClick.bind(this)}>
                                 <Button bg={'#4290C9'} buttonName={`Book Appointment`} width={`290px`} height={`59px`} />
                             </div>
-                        </Link>
                     </div>
 
 
@@ -66,6 +109,7 @@ function DoctorProfile(props) {
 
 
     )
+        }
 }
 
 export default DoctorProfile;

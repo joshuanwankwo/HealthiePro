@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './BookDoc.css';
 import CongratsModal from '../congratsModal/congratsModal';
 import NavBar from '../NavBar/NavBar'
-import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
 import cloudinary from 'cloudinary-core';
 const cloudinaryCore = new cloudinary.Cloudinary({ cloud_name: 'healthie' });
 
@@ -12,17 +11,71 @@ class BookDoc extends Component {
    constructor(props) {
       super(props)
       this.state = {
-         display: false
+         display: false,
+         location: null,
+         date: null,
+         time: null,
+         email: null,
+         name: null,
+         phoneNo: null,
       }
       this.handleModal = this.handleModal.bind(this)
    }
+   componentDidMount() {
+   }
+   handleChange(event) {
+      const { name, value } = event.target;
+      switch (name) {
+         case 'date': this.setState({
+            date: event.target.value
+         })
+         break;
+         case 'time':  this.setState({
+            time: event.target.value
+         })
+         case 'name': this.setState({
+               name: event.target.value
+         })
+         break;
+            case 'email': this.setState({
+               email: event.target.value
+            })
+         break;
+            case 'phoneNo': this.setState({
+               phoneNo: event.target.value
+            })
+         break;
+         default :
+         break
+            }
 
+      console.log(this.state)
+   }
    handleModal(event) {
       event.preventDefault();
       this.setState({ display: true })
       console.log("i clicked")
    }
 
+   handleSubmit(event) {
+      event.preventDefault();
+      console.log("i submit")
+      fetch("https://healthieapp.herokuapp.com/api/appointments", {
+         method: 'post',
+         headers: {
+            "Content-Type": "application/json",
+            "authtoken": localStorage.getItem('userToken')
+         },
+         body: JSON.stringify({user: localStorage.getItem('userId'), doctor: localStorage.getItem('doctorId'), date: this.state.date, location: localStorage.getItem('address') })
+      }).then((response) => {
+         return response.json();
+      }).then((body) => {
+         console.log(body)
+         if (body.success){
+            this.setState({ display: true })
+         }
+      });
+   }
 
    render() {
       return (
@@ -50,54 +103,52 @@ class BookDoc extends Component {
                   <img className="Book-Doc-profile-pic" src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230054/healthie/DoctorsProfile_ggywwy.jpg')} />
                </div>
 
-               <form id="bookDoc-form">
+               <form id="bookDoc-form" onSubmit={this.handleSubmit.bind(this)}>
 
                   <div id="bookDoc-doc-info">
                      <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230048/healthie/bookdoc-doc-info_d1mbfq.svg')} />
-                     <p>Request Appointment With Dr. Ifedili Joshua</p>
+         <p> Book appointment with Dr {localStorage.getItem("name")}</p>
                   </div>
                   <div id="bookDoc-input-hospital">
-                     <input placeholder="New Heaven Hospital, Enugu" />
-                     <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230055/healthie/dropdown_llk5ae.svg')} />
+                     <input placeholder={localStorage.getItem("address")} />
                   </div>
 
 
 
                   <div id="bookDoc-input-schedule-con">
                      <div id="bookDoc-input-date">
-                        <input  placeholder="27 September 2019" />
-                        <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230040/healthie/calender_bshzcy.svg')} />
+                        <input placeholder="27 September 2019" type='date' name="date" onChange={this.handleChange.bind(this)} />
                      </div>
                      <div id="bookDoc-input-time">
-                        <input placeholder="Select Time" type="calender"/>
-                        <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230055/healthie/dropdown_llk5ae.svg')} />
+                        <input placeholder="Select Time" type="time" name="time"  onChange={this.handleChange.bind(this)}/>
                      </div>
                   </div>
 
                   <div id="bookDoc-input-name">
-                     <input placeholder="Enter Your Name" />
+                     <input placeholder="Enter Your Name" name="name" />
                   </div>
 
                   <div id="bookDoc-input-phone-con">
                      <div id="bookDoc-input-code">
-                        <input placeholder="Nigeria (+234)" />
-                        <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230055/healthie/dropdown_llk5ae.svg')} />
+                         <p>+234</p>
                      </div>
                      <div id="bookDoc-input-phone">
-                        <input placeholder="Mobile Number" />
+                        <input placeholder="Mobile Number" name="phoneNo" />
                      </div>
                   </div>
 
                   <div id="bookDoc-input-email">
-                     <input placeholder="Email Address" />
+                     <input placeholder="Email Address" name="email" />
                   </div>
-                  <button onClick={this.handleModal} id="bookDoc-form-Submit">Submit</button>
+                  <button  onSubmit={this.handleSubmit.bind(this)} id="bookDoc-form-Submit">Submit</button>
 
 
                </form>
             </div>
 
          </div>
+
+// onClick={this.handleModal}
 
 
       )

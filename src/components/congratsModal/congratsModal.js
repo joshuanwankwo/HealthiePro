@@ -31,7 +31,7 @@ class CongratsModal extends Component {
 
 
 <div>
-                   <Link to ="/homepage" > <p>
+                   <Link to ="/dashboard" > <p>
                         continue
                     </p> </Link>
 </div>
