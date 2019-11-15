@@ -41,10 +41,6 @@
     cursor:pointer;
 }
 
-.navitems > div:hover{
-    cursor: pointer;
-}
-
 .nav-btn{
     padding: 5px 18px;
     border-radius: 4px;
