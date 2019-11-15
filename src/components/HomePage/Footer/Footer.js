@@ -38,7 +38,7 @@ function Footer(props) {
             </div>
 
             <div id="home-social-media-cons">
-                <i class="fa fa-facebook"></i>
+                <i className="fa fa-facebook"></i>
             </div>
         </section>
     )
