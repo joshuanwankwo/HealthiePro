@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavBar.css';
+import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
 
 import bell from "../../assets/bell.svg"
 import profile from "../../assets/profile.svg"
@@ -12,7 +13,9 @@ const NavBar = (props) => {
     return (
         
         <header>
+            <Link to ="/" id="navbar-con-img-link">
             <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230076/healthie/logo1_iesguq.svg')} />
+            </Link>
             <ul>
                 <li><img src={bell} /></li>
                 <li><img src={profile} /></li>
