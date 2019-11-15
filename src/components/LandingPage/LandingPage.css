@@ -1,89 +1,133 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: white;
-    margin: 0px;
-    padding: 0px;
-    background: #ffffff;    
+body {
+  scroll-behavior: smooth;
 }
 
-.LandingPage-parent{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+/* .h1-tag {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 60px;
+  width: 594px;
+  height: 154px;
+  color: #4290c9;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 119.7%;
 }
 
-.parent-text-btn{
-    /* display: flex; */
-    /* border: 1px solid green; */
-    /* width: 100vw; */
-
+.p-tag {
+  position: absolute;
+  margin-top: 390px;
+  margin-left: 60px;
+  width: 446px;
+  height: 58px;
+  color: #4290c9;
+  word-wrap: wrap;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180.4%;
 }
 
-.h1-tag{
-    position: absolute;
-    margin-top: 200px;
-    margin-left: 60px;
-    width: 594px;
-    height: 154px;
-    color: #4290C9;
-    font-family: 'Noto Serif';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 119.7%;
+.landPage-content {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.p-tag{
-    position: absolute;
-    margin-top: 390px;
-    margin-left: 60px;
-    width: 446px;
-    height: 58px;
-    color: #4290C9;;
-    word-wrap: wrap;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 180.4%;
-}
-
-.landPage-content{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.doctors-img{
-    position: relative;
-    right: -16%;
-   
+.doctors-img {
+  position: relative;
+  right: -16%;
 }
 
 .arrow {
-    margin-left: 5px;
+  margin-left: 5px;
+} */
+
+.container {
+  width: 1140px;
+  margin: 0px auto;
 }
 
+.landing-jumbotron {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 90px);
+  margin-top: 90px;
+  overflow: hidden;
+}
 
-/* @media (min-width: 320px) and (max-width: 480px) {
-  
-    .doctors-img{
-        position: relative;
-        right: 1%;
-        top: 1%;
-       
-    }
-    
-} */
+.ladning-jumbo-left {
+  width: 55%;
+}
+
+.pri-but {
+  background: #4290c9;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 119.7%;
+  color: #4290c9;
+  margin-top: 180px;
+}
+
+p {
+  color: #4290c9;
+  margin: 60px 0;
+}
+
+.doctors-img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.landing-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.landing-details-content {
+  width: 50%;
+}
+
+.landing-details-content h3 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4290C9;
+  margin-bottom: 20px;
+}
+
+.landing-details-content h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #35444E;
+}
+
+.landing-details-content p {
+    margin-top: 0px;
+    font-size: 16px;
+    color: #35444E;
+}
