@@ -19,7 +19,6 @@ class BookDoc extends Component {
          name: null,
          phoneNo: null,
       }
-      this.handleModal = this.handleModal.bind(this)
    }
    componentDidMount() {
    }
@@ -51,12 +50,6 @@ class BookDoc extends Component {
 
       console.log(this.state)
    }
-   handleModal(event) {
-      event.preventDefault();
-      this.setState({ display: true })
-      console.log("i clicked")
-   }
-
    handleSubmit(event) {
       event.preventDefault();
       console.log("i submit")
@@ -117,15 +110,15 @@ class BookDoc extends Component {
 
                   <div id="bookDoc-input-schedule-con">
                      <div id="bookDoc-input-date">
-                        <input placeholder="27 September 2019" type='date' name="date" onChange={this.handleChange.bind(this)} />
+                     <input placeholder="Select Date" type="date" name="date" required onChange={this.handleChange.bind(this)}/>
                      </div>
                      <div id="bookDoc-input-time">
-                        <input placeholder="Select Time" type="time" name="time"  onChange={this.handleChange.bind(this)}/>
+                        <input placeholder="Select Time" type="time" name="time" required onChange={this.handleChange.bind(this)}/>
                      </div>
                   </div>
 
                   <div id="bookDoc-input-name">
-                     <input placeholder="Enter Your Name" name="name" />
+                     <input placeholder="Enter Your Name" required name="name" />
                   </div>
 
                   <div id="bookDoc-input-phone-con">
@@ -133,12 +126,12 @@ class BookDoc extends Component {
                          <p>+234</p>
                      </div>
                      <div id="bookDoc-input-phone">
-                        <input placeholder="Mobile Number" name="phoneNo" />
+                        <input placeholder="Mobile Number" required name="phoneNo" />
                      </div>
                   </div>
 
                   <div id="bookDoc-input-email">
-                     <input placeholder="Email Address" name="email" />
+                     <input placeholder="Email Address" required name="email" />
                   </div>
                   <button  onSubmit={this.handleSubmit.bind(this)} id="bookDoc-form-Submit">Submit</button>
 

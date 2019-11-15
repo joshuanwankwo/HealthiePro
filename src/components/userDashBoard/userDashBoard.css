@@ -57,6 +57,7 @@
     overflow-y: scroll;
     background-color: #f8f8f8f8;
     overflow-x: hidden;
+    flex-direction: row-reverse;
 }
 
 #userDashboard-card{
