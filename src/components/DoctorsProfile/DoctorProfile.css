@@ -1,0 +1,15 @@
+ .Doc-profile-parent-div{
+     
+  display: grid;
+  grid-template: 10% 90%/ 1fr;
+} 
+.doc-profile-sub-div{
+    display:flex;
+}
+.doc-profile-image-con{
+    width:40%;
+}
+
+.Doc-pro-left-side{
+  margin:20px;
+}

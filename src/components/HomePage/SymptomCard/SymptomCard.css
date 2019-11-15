@@ -1,0 +1,49 @@
+#home-symptom-card-wrapper {
+    display: grid;
+    justify-items: center;
+    margin-top:5%;
+}
+
+#home-symptom-card-con {
+    display: flex;
+    width: 87%;
+    justify-items: center;
+    background: #fff;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+#home-symptom-card-con section {
+    width: 50%;
+}
+
+#home-symptom-card-con img {
+    float: right;
+}
+
+#home-symptom-card-text-con {
+    display:flex;
+    flex-direction: column;
+    
+    
+
+}
+#home-symptom-card-text{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 154.4%;
+    margin:10%;
+}
+
+#home-symptom-card-check {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140.7%;
+    color: #4290C9;
+    cursor: pointer;
+    margin: 5% 10%;
+}
