@@ -23,6 +23,9 @@ aside {
     font-size: 17px;
     padding: 25px 0 25px 100px;
   }
+  aside li i{
+   margin-left: 10px;
+  }
   
   aside .active-dashboard {
     background: #4290c9;
