@@ -73,17 +73,18 @@ class LoginPage extends React.Component {
     }
     render() {
         return (
+
             <div className="LoginPage-parent">
                 <Form className="login-form-body" onSubmit={this.handleSubmit.bind(this)}>
 
                     <div className="login-P">
-                        <p>We provide the best </p>
-                        <p>health care service</p>
-
+                        <p>We provide the best health care service</p>
                     </div>
+
                     <div className="error-message" style={this.state.errorMessage}>
                         <p>{this.state.message}</p>
                     </div>
+                    
                     <Form.Group className="login-input-container" controlId="formGroupEmail">
                         <Form.Label className="login-form-label">Email address</Form.Label>
                         <Form.Control name="email" required className="login-Email-form-control" type="email" placeHolder='Email' onChange={this.handleChange.bind(this)} />
@@ -94,10 +95,10 @@ class LoginPage extends React.Component {
                         <Form.Control name="password"  required className="login-password-form-control" type="password" placeholder='Password' onChange={this.handleChange.bind(this)} />
                     </Form.Group>
 
-                    <button className="Login-Button btn1" >{this.state.loading ? <Spinner animation="border" variant="primary" /> : "Login"}</button>
+                    <button className="btn1" >{this.state.loading ? <Spinner animation="border" variant="light" /> : "Login"}</button>
 
                     <Link className="btn2-con" to="/signup">
-                        <button className="Login-Button btn2" >Sign Up</button>
+                        <button className="btn2" >Sign Up</button>
                     </Link>
 
                 </Form>
