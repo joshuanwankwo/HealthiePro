@@ -1,0 +1,89 @@
+
+/* ------------------------------------- */
+/*             Dashboard                 */
+/* ------------------------------------- */
+
+#dashboard-body {
+    display: flex;
+    height: calc(100vh - 90px);
+    margin-top: 90px;
+  }
+  
+/* ------------------------------------- */
+/*          Dashboard main               */
+/* ------------------------------------- */
+
+main {
+    padding: 20px;
+    background: #f8f8f8;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  
+  /* ------------------------------------- */
+  /*          Appointment card             */
+  /* ------------------------------------- */
+  
+  .dashboard-main-container {
+    color: #35444e;
+    width: 1000px;
+    margin: 0px auto;
+  }
+  
+  .appointment-card {
+    display: flex;
+    border-radius: 5px;
+    height: 170px;
+    margin: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  }
+  
+  .appointment-card-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-right: 1px solid #d3d3d3;
+  }
+  
+  .appointment-card-right {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .appointment-card-right img {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .appointment-card-right h2 {
+    line-height: 100%;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .appointment-card-right p {
+    line-height: 150%;
+    font-size: 16px;
+  }
+  
+  .appointment-card-right a {
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .ap-red {
+    color: #eb5757;
+  }
+  
+  .ap-blue {
+    color: #4290c9;
+  }
+  
+  .ap-green {
+    color: #27ae60;
+  }

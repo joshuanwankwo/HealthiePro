@@ -1,0 +1,65 @@
+#home-footer-con-wrapper {
+  display: grid;
+  /* width: 1140px; */
+  margin: 0px auto;
+  padding: 70px 0px 60px 0px;
+}
+
+.home-footer-text-con {
+  padding-top: 5%;
+  border-top: 2px solid #dedede;
+  display: flex;
+  width: 87%;
+  justify-self: center;
+  justify-items: stretch;
+}
+
+.home-footer-text-con div {
+  width: 33.33%;
+}
+
+#home-footer-about {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 119.7%;
+  color: #35444e;
+}
+
+.home-footer-texts {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.5px;
+  line-height: 154.4%;
+  color: #35444e;
+  width: max-content;
+}
+
+#home-recent-blog {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 119.7%;
+  color: #35444e;
+}
+
+#footer-contact {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 119.7%;
+  color: #35444e;
+}
+
+#follow {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 119.7%;
+  color: #fff;
+}

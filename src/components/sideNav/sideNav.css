@@ -1,0 +1,33 @@
+
+
+aside {
+    background: #35444e;
+    color: #3b3b3b;
+    min-width: 350px;
+    height: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+  }
+  
+  aside img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 50px auto;
+    border-radius: 50%;
+  }
+  
+  aside li {
+    color: #ffffff;
+    list-style: none;
+    font-size: 17px;
+    padding: 25px 0 25px 100px;
+  }
+  aside li i{
+   margin-right: 10px;
+  }
+  
+  aside .active-dashboard {
+    background: #4290c9;
+    border-bottom: 0;
+  }
