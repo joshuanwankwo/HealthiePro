@@ -4,8 +4,43 @@ import {Switch,Route, BrowserRouter, Link} from "react-router-dom";
 import './symptom.css';
 
 
+
 class  Symptoms extends React.Component {
+    constructor(props) {
+        super(props);
+        
+    this.state = {
+        symptoms: []
+    };
+
+}
+
+componentDidMount(){
+    // console.log('this.props', this.props)
+    fetch("https://healthieapp.herokuapp.com/api/symptoms")
+    .then(function (response) {
+        return response.json();
+    }).then((body) =>{
+        this.setState({
+            symptoms:body.data
+        })
+         })
+    setTimeout(()=>console.log(this.state.symptoms[0].name), 3000)
+    this.handleClick = this.handleClick.bind(this)
+}
+
+
+handleClick(event){
+    
+} 
+
     render(){
+
+        const symptomss = this.state.symptoms.map((items)=>(
+            <div style={{ backgroundImage:`url(${items.imgUrl})` }} className="symptom-card-con-1" onClick ={this.handleClick.bind()} key={items.id}><p>{items.name}</p></div>
+        ));
+
+
         return (
             <div id="symptoms-con">
                 <NavBar/>
@@ -21,81 +56,13 @@ class  Symptoms extends React.Component {
     
                     <div id="symptoms">
                         <p id="symptom-header">What are your Symptoms?</p>
-    
                         <div>
-                            <div className="symptom-card-con-1">
-                                {/* <img src="./selectedMark.svg"/> */}
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                {/* <img src="./selectedMark.svg"/> */}
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
+
+                           {symptomss}
+
                         </div>
     
-                        <div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                        </div>
-    
-                        <div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                        </div>
-    
-                        <div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                            <div className="symptom-card-con-1">
-                                <p>Sore Throat</p>
-                            </div>
-                        </div>
-                        
+                      
     
                         <div id="symptoms-submit">
     

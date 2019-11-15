@@ -6,17 +6,17 @@ import NavBar from '../NavBar/NavBar';
 import cloudinary from 'cloudinary-core';
 const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
 
-
 class SelectSearchedDoctor extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            search:'',
             doctors:[]
         }
     }
     componentDidMount(){
         // console.log('this.props', this.props)
-        fetch("https://healthieapp.herokuapp.com/api/doctors")
+        fetch("https://healthieapp.herokuapp.com/api/doctors?q=")
         .then(function (response) {
             return response.json();
         }).then((body) =>{
@@ -27,14 +27,17 @@ class SelectSearchedDoctor extends Component {
         setTimeout(()=>console.log(this.state.doctors[0].name), 3000)
         this.handleClick = this.handleClick.bind(this)
     }
-
+handleChange(event){
+  this.setState({
+       search:event.target.value
+  })
+}
     handleClick(doctor){
         console.log("clicked")
-        this.props.history.push({pathname:"/doctorprofile", state: doctor})
+        this.props.history.push({pathname:"/doctorprofile", doctor: doctor})
     }
 
     render() {
-        console.log(this.state.doctors)
          let doctorsResult = this.state.doctors.map((doctor, key)=>{
              return (
             //map through the doctors on the data base and showcase them on client side
@@ -73,7 +76,7 @@ class SelectSearchedDoctor extends Component {
                     <NavBar />
                 <div id="relatedSearch">
                     <div id="searchBox">
-                    <input type="search" placeholder="Search..."/>
+                    <input type="search" placeholder="Search..." value={this.state.search} onChange={this.handleChange.bind(this)}/>
                     <i class="fas fa-search"></i>
                     </div>
 

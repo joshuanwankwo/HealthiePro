@@ -1,8 +1,7 @@
 import React from 'react';
 import './Signup.css';
-import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import {Form, Spinner, Button,Col} from 'react-bootstrap';
+
 import { Switch, Route, BrowserRouter, Link } from "react-router-dom";
 
 const inputValues = {};
@@ -33,7 +32,10 @@ handleSubmit(event){
       method: 'post',
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(this.state.input)
-    }).then(function (response) {
+    }).then( (response)=> {
+      this.setState({
+        loading:false
+      })
       return response.json();
     }).then((body)=> {
       console.log(body)
@@ -142,7 +144,7 @@ render() {
         </Form.Group>
 
         <Button className="signUp-btn" type="submit">
-          {this.state.loading?'Loading':'Sign Up'}
+          {this.state.loading?<Spinner animation="border" variant="primary" />:'Sign Up'}
         </Button>
       </Form>
 
