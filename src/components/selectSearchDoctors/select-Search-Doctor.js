@@ -52,14 +52,14 @@ class SelectSearchedDoctor extends Component {
             return (
                 //map through the doctors on the data base and showcase them on client side
 
-                <div id="resultData" onClick={() => { this.handleClick(doctor) }} className="search-card">
+                <div id="resultData" onClick={() => { this.handleClick(doctor, key) }} className="search-card">
                     <img style={{ borderRadius: "5px" }} src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230051/healthie/DrDebby_snh9xq.png')} alt="" />
                     <div
                         style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "10px 20px" }}>
                         <div>
                             <h2>{doctor.name}</h2>
                             <p>{doctor.specialty}</p>
-                            <p>Graceland Hospital</p>
+                            <p>{doctor.hospital}</p>
                             <p>{doctor.address}</p>
                             <div className="star-group">
                                 <img src={star} />
@@ -98,28 +98,6 @@ class SelectSearchedDoctor extends Component {
                             </div>
                             <h2>Related Search</h2>
                             {doctorsResult}
-                            <div className="search-card">
-                                <img style={{ borderRadius: "5px" }} src={muse} alt="" />
-                                <div
-                                    style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "10px 20px" }}>
-                                    <div>
-                                        <h2>Dr. Strange</h2>
-                                        <p>Pediatric, Surgery</p>
-                                        <p>Graceland Hospital</p>
-                                        <p>5 Osimiri Street Transekulu Enugu.</p>
-                                        <div className="star-group">
-                                            <img src={star} />
-                                            <img src={star} />
-                                            <img src={star} />
-                                            <img src={star} />
-                                            <img src={star} />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <a className="ap-blue" href="">Book Appointment</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

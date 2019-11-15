@@ -33,46 +33,50 @@ class userDashboard extends React.Component {
     }
     render() {
 
-        let appointments = this.state.appointmentsInfo.map((appointment, key)=>{
-                console.log(appointment.doctor.name, "this is your resolved name");
-            return(
+        let appointments = this.state.appointmentsInfo.map((appointment, key) => {
+            console.log(appointment.doctor.name, "this is your resolved name");
+            return (
 
-            <div id='userDashboard-card' key>
-            <div id='time'>
-                <h5 id='day'>{appointment.status}</h5>
-                <h5 id='hour'>21 Hours</h5>
-            </div>
-            <div id='details'>
-                <img id='icon' src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230066/healthie/icon_vm64nm.png')} />
-                <aside id='texts'>
-                    <h5 id='name'>{appointment.doctor.name}. </h5>
-                    <h5 id='specialty'>{appointment.doctor.specialty}</h5>
-                    <h5 id='specialty'>Graceland Hospital</h5> <br/>
-                    <h5 id='specialty'>{appointment.location} <br /> Enugu  </h5>
-                    <div id='action'>
-                        <h5 id='reschedule'>Reschedule Appointment</h5>
-                        <h5 id='cancle'>Cancle Appointment</h5>
+                <div className="appointment-card" key>
+                    <div className="appointment-card-left">
+                        <div style={{ textAlign: "center" }}>
+                            <h2>{appointment.status}</h2>
+                            <h4>21 hours</h4>
+                        </div>
                     </div>
-                </aside>
-            </div>
-        </div>
+                    <div className="appointment-card-right">
+                        <img src={appointment.doctor.imgUrl} alt="" />
+                        <div style={{ display: "flex", flexDirection: "column", justifyContent: "spaceBetween" }}>
+                            <div>
+                                <h2>{appointment.doctor.name}</h2>
+                                <p>{appointment.doctor.specialty}</p>
+                                <p>{appointment.hospital}</p>
+                                <p>{appointment.location}</p>
+                            </div>
+                            <div>
+                                <a className="ap-blue" href="">Reschedule Appointment</a>
+                                <a className="ap-red" href="">Cancel Appointment</a>
+                                {/* <a class="ap-green" href="">Confirmed</a> */}
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             )
         })
 
 
-        // const appointmentsInfo = this.state.appointmentsInfo
-        // console.log(appointmentsInfo, "In render method")
+
         return (
             <div>
                 <NavBar />
-                <div id='dashboard-main'>
+                <div id='dashboard-body'>
                     <Sidenav />
-
-                    <div id='Dashboard-card-container'>
-                        {appointments}
-                    </div>
-                    
+                    <main>
+                        <div className="dashboard-main-container">
+                            {appointments}
+                        </div>
+                    </main>
                 </div>
             </div>
         );

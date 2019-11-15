@@ -1,5 +1,5 @@
  .Doc-profile-parent-div{
-     
+  margin-top: 90px;
   display: grid;
   grid-template: 10% 90%/ 1fr;
 } 
