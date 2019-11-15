@@ -11,6 +11,8 @@ import { Switch, Route, BrowserRouter, Link } from "react-router-dom";
 
 import landingImg from '../../assets/landing-side-img.png'
 import docImg from '../../assets/doc-pic-landing.png'
+import doctorimg from '../../assets/doctor.png';
+import Testo from '../../assets/Testo.png';
 
 import cloudinary from 'cloudinary-core';
 const cloudinaryCore = new cloudinary.Cloudinary({ cloud_name: 'healthie' });
@@ -59,10 +61,10 @@ function LandingPage(props) {
                     <h2>We Provide you with the best health care services</h2>
                     <p>We are compassionate about the community and the way their health affect their everyday activity with their environment and with one another.<br /><br /> Therefore our services ranging from the simplest first aid treatments to complex consultions with our medical professionals are available nationwide to all as our priority is to create a healthy and happier world.</p>
                 </div>
-                <img src={docImg} />
+                <img src={doctorimg} />
             </div>
             <div id="our-solutions" className="container landing-details">
-                <img src={docImg} />
+                <img src={Testo} />
                 <div className="landing-details-content">
                     <h3>Our Solutions</h3>
                     <h2>We provide the best quality of healthcare for the communities.</h2>

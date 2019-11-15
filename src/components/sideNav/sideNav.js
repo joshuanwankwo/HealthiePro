@@ -7,9 +7,31 @@ const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'healthie'});
 class Sidenav extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {
+           appointmentsInfo:[]
+          }
+    }
+    componentDidMount(){
+        fetch("https://healthieapp.herokuapp.com/api/users/"+localStorage.getItem('userId')+'/appointments', {
+         method: 'get',
+         headers: {
+            "Content-Type": "application/json",
+            "authtoken": localStorage.getItem('userToken')
+         },
+      }).then((response) => {
+         return response.json();
+      }).then((body) => {
+         console.log(body)
+         this.setState({
+            appointmentsInfo: body.data 
+         })
+      });
     }
     render() { 
+        let appointment = this.state.appointmentsInfo.map((appointment, key)=>{
+            return appointment
+        })
+        console.log(`this are your appointment ${appointment}`)
         return ( 
             <aside id="sidenav">
             <img id='sidenav-profilePic' src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230078/healthie/profilePic_be1tvr.png')} />
