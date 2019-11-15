@@ -1,215 +1,95 @@
-#searchedDoctorsContainer{
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: left top;
-    background:linear-gradient(180deg, rgba(68, 199, 191, 0.1) 0%,#35444E 100%), url("https://res.cloudinary.com/healthie/image/upload/v1573230083/healthie/image8_ne6y1k.png");
-    opacity: 0.7;
+/* ------------------------------------- */
+/*        Search Doctor                  */
+/* ------------------------------------- */
+
+#search-doctor-body {
+  background: url("../../assets/search-docotor-img.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 90px);
+  margin-top: 90px;
+  overflow: hidden;
 }
 
+/* ------------------------------------- */
+/*        Search Doctor section          */
+/* ------------------------------------- */
 
-
-
-/* #navWrapper{
-    padding: 1em;
-    height: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 2;
-    background-color: white;
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
-    margin-bottom:0.5px;
+.search-doctor-section {
+  position: relative;
+  background: #ffffff;
+  height: 100%;
+  width: 50%;
+  overflow-y: scroll;
+  z-index: 4;
 }
 
-.fdoc-logo{
-    flex: 1;
-    align-self: center;
+.search-doctor-container {
+  width: 700px;
+  margin: 0px auto;
 }
 
-
-#fdoc-logo{
-    margin-left: 15%;
+.search-doctor-container h2 {
+  margin-top: 40px;
+  color: #4290c9;
+  font-size: 24px;
 }
 
-.fdoc-navigation{
-    display: flex;
-    flex: 1;
-    align-self: center;
-    justify-content: flex-end;
-    top: 27px;
-    margin-right: 5%;
-    align-items: center;
+/* ------------------------------------- */
+/*        Search Doctor bar              */
+/* ------------------------------------- */
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0 0;
 }
 
-.fdoc-navigation >a{
-    color: white;
-    font-size: 15px;
-    padding-left: 20px;
-    padding-right: 20px; 
-    font-weight: normal;
-    line-height: 22px;
-    font-family: 'Noto Sans';
-    background-color: #4290C9;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-left: 10px;
-
+.search-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
-.fdoc-navigation >a:hover{
-    text-decoration: none;
-    background-color: #4290C9;
-    color:  white;
-    border-radius: 3px;
-}
- */
- #searchBox > i{
-    color: #4290C9;
-    font-size: 20px;
-    font-weight: 600;
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 22px;
-    margin-right: 10px;
+.search-input input {
+  padding: 20px;
+  height: 50px;
+  width: 550px;
+  box-sizing: border-box;
 }
 
+/* ------------------------------------- */
+/*        Search Doctor card             */
+/* ------------------------------------- */
 
-#relatedSearch{
-    width: 50%;
-    z-index: 1;
-    float: right;
-    height: calc(100vh - 80px);
-    padding: 10px;
-    background-color: #F8F8F8;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow-y: scroll;
+.search-card {
+  display: flex;
+  border-radius: 5px;
+  height: 170px;
+  margin: 30px 0;
 }
 
-#relatedSearch > #searchBox{
-    width: 62%;
-    height: min-content;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-top: 40px;
-    /* justify-content: space-between; */
-   
+.search-card h2 {
+  margin-top: 0px;
+  font-size: 18px;
+  color: inherit;
 }
 
-#relatedSearch > #searchBox > input{
-    height: 40px;
-    width: 70%;
-    padding-left: 40px;
-    background: #FFFFFF;
-    border-radius: 4px;
-    align-self: center;
-    border: none;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-right-color: transparent;
+.search-card p {
+  margin: 0x;
 }
 
-
-#relatedSearch > #searchBox > i{
-
-    background: #FFFFFF;
-    align-items: center;
-    border: none;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-left-color: transparent;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-left-width: 0px;
-    height: 100%;
-    padding-top: 10px;
-    border-width: 1px 1px 1px 0;
+.star-group {
+  display: flex;
+  margin-top: 10px;
 }
 
-#relatedSearch > #result-container {
-    /* position: relative; */
-    width: max-content;
-    /* border: 1px solid black; */
-    height: max-content;
-    padding: 10px;
-    /* display: flex; */
-    
-}
-
-#relatedSearch > #result-container > h1{
-    margin-top: 30px;
-    /* margin-left: -100%; */
-    font-size: 24px;
-    color: #4290C9;
-    font-weight: bold;
-}
-
-#resultData{
-    height: min-content;
-    width: max-content;
-    /* border: 1px solid blue; */
-    display: flex;
-    padding: 10px;
-    
-}
-
-#details{
-    /* border: 1px solid blue; */
-    height: max-content;
-    width: max-content;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#details > h1{
-    font-family: 'Noto Serif';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 119%;
-    color: #000000;
-}
-
-#details > h2{
-    font-family: 'Noto Serif';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 140%;
-    color: #000000;
-}
-#details >h3{
-    font-family: 'Noto Serif';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 119%;
-    color: #000000;
-}
-
-#details >h4{
-    font-family: 'Noto Serif';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 119%;
-    color: #000000;
-}
-
-#details >a{
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
-    color: #4290C9;
-}
-
-#star > img{
-    padding: 5px;
+.star-group img {
+  display: block;
+  height: 20px;
 }
