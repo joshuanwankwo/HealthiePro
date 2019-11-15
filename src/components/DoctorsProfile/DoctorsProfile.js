@@ -58,11 +58,10 @@ class DoctorProfile extends React.Component {
         return (
         <div className="Doc-profile-parent-div">
             <NavBar />
-            <div className="doc-profile-sub-div">
+            <div className="doc-profile-sub-div container">
                 <div className="doc-profile-image-con">
-                    <img className="Doc-profile-pic" src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230054/healthie/DoctorsProfile_ggywwy.jpg')} />
+                    <img className="Doc-profile-pic" style={{height: "500px"}} src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230054/healthie/DoctorsProfile_ggywwy.jpg')} />
                 </div>
-
 
                 <div className="Doc-pro-left-side" >
 

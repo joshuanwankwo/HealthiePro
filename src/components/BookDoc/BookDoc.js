@@ -28,25 +28,25 @@ class BookDoc extends Component {
          case 'date': this.setState({
             date: event.target.value
          })
-         break;
-         case 'time':  this.setState({
+            break;
+         case 'time': this.setState({
             time: event.target.value
          })
          case 'name': this.setState({
-               name: event.target.value
+            name: event.target.value
          })
-         break;
-            case 'email': this.setState({
-               email: event.target.value
-            })
-         break;
-            case 'phoneNo': this.setState({
-               phoneNo: event.target.value
-            })
-         break;
-         default :
-         break
-            }
+            break;
+         case 'email': this.setState({
+            email: event.target.value
+         })
+            break;
+         case 'phoneNo': this.setState({
+            phoneNo: event.target.value
+         })
+            break;
+         default:
+            break
+      }
 
       console.log(this.state)
    }
@@ -60,12 +60,12 @@ class BookDoc extends Component {
             "Content-Type": "application/json",
             "authtoken": localStorage.getItem('userToken')
          },
-         body: JSON.stringify({user: localStorage.getItem('userId'), doctor: localStorage.getItem('doctorId'), date: this.state.date, location: localStorage.getItem('address') })
+         body: JSON.stringify({ user: localStorage.getItem('userId'), doctor: localStorage.getItem('doctorId'), date: this.state.date, location: localStorage.getItem('address') })
       }).then((response) => {
          return response.json();
       }).then((body) => {
          console.log(body)
-         if (body.success){
+         if (body.success) {
             this.setState({ display: true })
          }
       });
@@ -92,16 +92,16 @@ class BookDoc extends Component {
 
 
             {/* <img id="bookDoc-intro-pic" src="./doctorIfedili.jpg" width="100%" height="100vh" /> */}
-            <div id="bookdoc-child-con">
+            <div id="bookdoc-child-con" className="container">
                <div>
-                  <img className="Book-Doc-profile-pic" src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230054/healthie/DoctorsProfile_ggywwy.jpg')} />
+                  <img className="Book-Doc-profile-pic" style={{height: "500px"}} src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230054/healthie/DoctorsProfile_ggywwy.jpg')} />
                </div>
 
                <form id="bookDoc-form" onSubmit={this.handleSubmit.bind(this)}>
 
                   <div id="bookDoc-doc-info">
                      <img src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230048/healthie/bookdoc-doc-info_d1mbfq.svg')} />
-         <p> Book appointment with Dr {localStorage.getItem("name")}</p>
+                     <p> Book appointment with Dr {localStorage.getItem("name")}</p>
                   </div>
                   <div id="bookDoc-input-hospital">
                      <input placeholder={localStorage.getItem("address")} />
@@ -112,10 +112,10 @@ class BookDoc extends Component {
                   <div id="bookDoc-input-schedule-con">
                      <div id="bookDoc-input-date">
 
-                     <input placeholder="Select Date" type="date" name="date" required onChange={this.handleChange.bind(this)}/>
+                        <input placeholder="Select Date" type="date" name="date" required onChange={this.handleChange.bind(this)} />
                      </div>
                      <div id="bookDoc-input-time">
-                        <input placeholder="Select Time" type="time" name="time" required onChange={this.handleChange.bind(this)}/>
+                        <input placeholder="Select Time" type="time" name="time" required onChange={this.handleChange.bind(this)} />
                      </div>
                   </div>
 
@@ -127,7 +127,7 @@ class BookDoc extends Component {
 
                   <div id="bookDoc-input-phone-con">
                      <div id="bookDoc-input-code">
-                         <p>+234</p>
+                        <p>+234</p>
                      </div>
                      <div id="bookDoc-input-phone">
 
@@ -140,7 +140,7 @@ class BookDoc extends Component {
 
                      <input placeholder="Email Address" required name="email" />
                   </div>
-                  <button  onSubmit={this.handleSubmit.bind(this)} id="bookDoc-form-Submit">Submit</button>
+                  <button onSubmit={this.handleSubmit.bind(this)} id="bookDoc-form-Submit">Submit</button>
 
 
                </form>
@@ -148,7 +148,7 @@ class BookDoc extends Component {
 
          </div>
 
-// onClick={this.handleModal}
+         // onClick={this.handleModal}
 
 
       )

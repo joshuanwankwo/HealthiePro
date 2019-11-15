@@ -53,7 +53,7 @@ class SelectSearchedDoctor extends Component {
                 //map through the doctors on the data base and showcase them on client side
 
                 <div id="resultData" onClick={() => { this.handleClick(doctor, key) }} className="search-card">
-                    <img style={{ borderRadius: "5px" }} src={cloudinaryCore.url('https://res.cloudinary.com/healthie/image/upload/v1573230051/healthie/DrDebby_snh9xq.png')} alt="" />
+                    <img style={{ borderRadius: "5px", display:"block", width:"170px" }} src={doctor.imgUrl}/>
                     <div
                         style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "10px 20px" }}>
                         <div>
