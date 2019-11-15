@@ -97,7 +97,7 @@ class LoginPage extends React.Component {
                         <Form.Control name="password"  required className="login-password-form-control" type="password" placeholder='Password' onChange={this.handleChange.bind(this)} />
                     </Form.Group>
 
-                    <button className="btn1" >{this.state.loading ? <Spinner animation="border" variant="primary" /> : "Login"}</button>
+                    <button className="btn1" >{this.state.loading ? <Spinner animation="border" variant="light" /> : "Login"}</button>
 
                     <Link className="btn2-con" to="/signup">
                         <button className="btn2" >Sign Up</button>
