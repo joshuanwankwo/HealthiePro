@@ -13,7 +13,7 @@ class HomePageMain extends React.Component {
             <div id="homeMain-con">
                        <HomePageNav />
                 <section id="home-intro">
-                    <p>Every day we bring hope </p>
+                    <p>Every day e bring hope </p>
                     <p>and smile to Patient we serve</p>
                 </section>
                  <HomeCards history={this.props.history}/>

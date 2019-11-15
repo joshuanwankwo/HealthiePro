@@ -144,7 +144,7 @@ render() {
         </Form.Group>
 
         <Button className="signUp-btn" type="submit">
-          {this.state.loading?<Spinner animation="border" variant="primary" />:'Sign Up'}
+          {this.state.loading?<Spinner animation="border" variant="light" />:'Sign Up'}
         </Button>
       </Form>
 
